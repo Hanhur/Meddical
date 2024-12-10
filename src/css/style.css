@@ -1,0 +1,73 @@
+html 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before 
+{
+    box-sizing: inherit;
+}
+
+a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+button 
+{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    /* text-transform: uppercase; */
+    cursor: pointer;
+}
+
+ul,
+ol
+{
+    list-style-type: none;
+}
+
+body 
+{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--Gray-blue);
+    /* font-family: "Yeseva One", serif; */
+}
+@font-face 
+{
+    font-family: "Work Sans";
+    src: url('../fonts/WorkSans-Regular.ttf') format('ttf');
+    src: url('../fonts/WorkSans-Medium.ttf') format('ttf');
+    src: url('../fonts/WorkSans-SemiBold.ttf') format('ttf');
+    src: url('../fonts/WorkSans-Bold.ttf') format('ttf');
+}
+@font-face 
+{
+    font-family: "Yeseva One";
+    src: url('../fonts/YesevaOne-Regular.ttf') format('ttf');
+}
+
+:root 
+{
+    --Gray-blue: #212124;
+    --Signal-blue: #1F2B6C;
+    --Light-blue: #BFD2F8;
+    --Twitter-color: #159EEC;
+    --cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container
+{
+    max-width: 1022px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
