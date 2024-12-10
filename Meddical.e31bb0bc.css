@@ -1,0 +1,45 @@
+.header-top
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.top-block
+{
+    display: flex;
+    align-items: center;
+    gap: 0 21px;
+}
+.block-box
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.block-text
+{
+    font-family: "Yeseva One", serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--Signal-blue);
+}
+.block-span
+{
+    color: var(--Twitter-color);
+}
+.box-text
+{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--Signal-blue);
+    margin-bottom: 2px;
+}
+.box_phone,
+.box_hour,
+.box_location
+{
+    font-weight: 500;
+    color: var(--Twitter-color);
+}
+
+/*# sourceMappingURL=/Meddical.e31bb0bc.css.map */
