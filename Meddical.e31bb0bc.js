@@ -302,7 +302,15 @@ function getMain() {
   main.className = "main";
   return main;
 }
-},{"./main.css":"src/components/main/main.css"}],"src/components/footer/footer.css":[function(require,module,exports) {
+},{"./main.css":"src/components/main/main.css"}],"src/images/footer-social/post.svg":[function(require,module,exports) {
+module.exports = "/post.5e2ed721.svg";
+},{}],"src/images/footer-social/linkedln.svg":[function(require,module,exports) {
+module.exports = "/linkedln.7819849c.svg";
+},{}],"src/images/footer-social/facebook.svg":[function(require,module,exports) {
+module.exports = "/facebook.ba9dc938.svg";
+},{}],"src/images/footer-social/instagram.svg":[function(require,module,exports) {
+module.exports = "/instagram.1bcd71c1.svg";
+},{}],"src/components/footer/footer.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -313,9 +321,28 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getFooter = getFooter;
+var _post = _interopRequireDefault(require("../../images/footer-social/post.svg"));
+var _linkedln = _interopRequireDefault(require("../../images/footer-social/linkedln.svg"));
+var _facebook = _interopRequireDefault(require("../../images/footer-social/facebook.svg"));
+var _instagram = _interopRequireDefault(require("../../images/footer-social/instagram.svg"));
 require("./footer.css");
-function getFooter() {}
-},{"./footer.css":"src/components/footer/footer.css"}],"index.js":[function(require,module,exports) {
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getFooter() {
+  var footer = document.createElement("footer");
+  footer.className = "footer";
+  var container = document.createElement("div");
+  container.className = "container";
+  var footerBlock = document.createElement("div");
+  footerBlock.className = "footer-block";
+  footerBlock.innerHTML = "\n        <div class=\"footer-box\">\n            <a class=\"footer-link-logo\" href=\"/home\">MEDDICAL</a>\n            <p class=\"footer-text\">Leading the Way in Medical Execellence, Trusted Care.</p>\n        </div>\n        <div class=\"footer-box\">\n            <p class=\"footer-box-text\">Important Links</p>\n            <ul class=\"footer-list\">\n                <li class=\"footer-item\">\n                    <a class=\"footer-link\" href=\"#\">Appointment</a>\n                </li>\n                 <li class=\"footer-item\">\n                    <a class=\"footer-link\" href=\"/doctord\">Doctors</a>\n                </li>\n                 <li class=\"footer-item\">\n                    <a class=\"footer-link\" href=\"/services\">Services</a>\n                </li>\n                 <li class=\"footer-item\">\n                    <a class=\"footer-link\" href=\"/about\">About Us</a>\n                </li>\n            </ul>\n        </div>\n        <div class=\"footer-box\">\n            <p class=\"footer-box-text\">Contact Us</p>\n            <address class=\"footer-address\">\n                <ul class=\"footer-list\">\n                    <li class=\"footer-item\">\n                        <a class=\"footer-link\" href=\"tel:237681812255\">Call: (237) 681-812-255</a>\n                    </li>\n                    <li class=\"footer-item\">\n                        <a class=\"footer-link\" href=\"mailto:fildineesoe@gmail.com\">Email: fildineesoe@gmail.com</a>\n                    </li>\n                    <li class=\"footer-item\">Address: 0123 Some place</li>\n                    <li class=\"footer-item\">Some country</li>\n                </ul>\n            </address>\n        </div>\n        <div class=\"footer-box\">\n            <p class=\"footer-box-text\">Newsletter</p>\n            <form class=\"footer-form\">\n                <input class=\"footer-input\" type=\"text\" placeholder=\"Enter your email address\">\n                <img class=\"footer_img-post\" src=\"".concat(_post.default, "\" alt=\"Linkedln\">\n            </form>\n        </div>\n    ");
+  var footerSocial = document.createElement("div");
+  footerSocial.className = "footer-social";
+  footerSocial.innerHTML = "\n        <p class=\"footer-social-text\">\xA9 2021 Hospital\u2019s name All Rights Reserved by PNTEC-LTD</p>\n        <ul class=\"footer_list\">\n            <li class=\"footer_item\">\n                <a class=\"footer_link\" href=\"#\">\n                    <img class=\"footer_img\" src=\"".concat(_linkedln.default, "\" alt=\"Linkedln\">\n                </a>\n            </li>\n            <li class=\"footer_item\">\n                <a class=\"footer_link\" href=\"#\">\n                    <img class=\"footer_img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                </a>\n            </li>\n            <li class=\"footer_item\">\n                <a class=\"footer_link\" href=\"#\">\n                    <img class=\"footer_img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                </a>\n            </li>\n        </ul>\n    ");
+  footer.append(container);
+  container.append(footerBlock, footerSocial);
+  return footer;
+}
+},{"../../images/footer-social/post.svg":"src/images/footer-social/post.svg","../../images/footer-social/linkedln.svg":"src/images/footer-social/linkedln.svg","../../images/footer-social/facebook.svg":"src/images/footer-social/facebook.svg","../../images/footer-social/instagram.svg":"src/images/footer-social/instagram.svg","./footer.css":"src/components/footer/footer.css"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -331,10 +358,9 @@ var app = document.querySelector("#app");
 var router = exports.router = new _navigo.default("/");
 var header = (0, _header.getHeader)();
 // const main = getMain();
-// const footer = getFooter();
-
+var footer = (0, _footer.getFooter)();
 router.resolve();
-app.append(header.header);
+app.append(header.header, footer);
 },{"navigo":"node_modules/navigo/lib/navigo.min.js","./src/components/header/header":"src/components/header/header.js","./src/components/main/main":"src/components/main/main.js","./src/components/footer/footer":"src/components/footer/footer.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -360,7 +386,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35947" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37187" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
