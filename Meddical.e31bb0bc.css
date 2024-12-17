@@ -41,5 +41,34 @@
     font-weight: 500;
     color: var(--Twitter-color);
 }
+.inner
+{
+    background-color: var(--Signal-blue);
+}
+.navigation
+{
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+    gap: 0 20px;
+    font-size: 18px;
+}
+.search-btn
+{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    margin-left: 290px;
+}
+.btn 
+{
+    background-color: var(--Light-blue);
+    color: var(--Signal-blue);
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 13px 35px;
+}
 
 /*# sourceMappingURL=/Meddical.e31bb0bc.css.map */
