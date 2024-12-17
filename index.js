@@ -15,4 +15,4 @@ const header = getHeader();
 
 router.resolve();
 
-app.append(header);
+app.append(header.header);

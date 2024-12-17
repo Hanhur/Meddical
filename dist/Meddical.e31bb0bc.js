@@ -200,7 +200,34 @@ function getHeaderTop() {
   headerTop.innerHTML = "\n        <a class=\"block-text\" href=\"#\">MED<span class=\"block-span\">DICAL</span></a>\n        <div class=\"top-block\">\n            <div class=\"block-box\">\n                <img class=\"box-img\" src=\"".concat(_phone.default, "\" alt=\"\">\n                <div class=\"box-phone\">\n                    <p class=\"box-text\">Emergency</p>\n                    <a class=\"box_phone\" href=\"mailto:237681812255\">(237) 681-812-255</a>\n                </div>\n            </div>\n            <div class=\"block-box\">\n                <img class=\"box-img\" src=\"").concat(_hour.default, "\" alt=\"\">\n                <div class=\"box-hour\">\n                    <p class=\"box-text\">Work Hour</p>\n                    <p class=\"box_hour\">09:00 - 20:00 Everyday</p>\n                </div>\n            </div>\n            <div class=\"block-box\">\n                <img class=\"box-img\" src=\"").concat(_location.default, "\" alt=\"\">\n                <div class=\"box-location\">\n                    <p class=\"box-text\">Location</p>\n                    <p class=\"box_location\">0123 Some Place</p>\n                </div>\n            </div>\n        </div>\n    ");
   return headerTop;
 }
-},{"../../images/headerTop/phone.svg":"src/images/headerTop/phone.svg","../../images/headerTop/hour.svg":"src/images/headerTop/hour.svg","../../images/headerTop/location.svg":"src/images/headerTop/location.svg","./headerTop.css":"src/components/headerTop/headerTop.css"}],"src/components/header/header.css":[function(require,module,exports) {
+},{"../../images/headerTop/phone.svg":"src/images/headerTop/phone.svg","../../images/headerTop/hour.svg":"src/images/headerTop/hour.svg","../../images/headerTop/location.svg":"src/images/headerTop/location.svg","./headerTop.css":"src/components/headerTop/headerTop.css"}],"src/components/navigation/navigationLink.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/navigation/navigationLink.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getNavigationLink = getNavigationLink;
+var _index = require("../../../index");
+require("./navigationLink.css");
+function getNavigationLink(path) {
+  var title = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
+  var link = document.createElement("a");
+  link.className = "link";
+  link.href = path;
+  link.textContent = title;
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    _index.router.navigate(path);
+  });
+  return link;
+}
+},{"../../../index":"index.js","./navigationLink.css":"src/components/navigation/navigationLink.css"}],"src/images/search.svg":[function(require,module,exports) {
+module.exports = "/search.8f132105.svg";
+},{}],"src/components/header/header.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -212,18 +239,53 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getHeader = getHeader;
 var _headerTop = require("../headerTop/headerTop");
+var _navigationLink = require("../navigation/navigationLink");
+var _search = _interopRequireDefault(require("../../images/search.svg"));
 require("./header.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 var headerTop = (0, _headerTop.getHeaderTop)();
 function getHeader() {
   var header = document.createElement("header");
   header.className = "header";
   var container = document.createElement("div");
   container.className = "container";
-  header.append(container);
+  var inner = document.createElement("div");
+  inner.className = "inner";
+  var nav = document.createElement("nav");
+  nav.className = "navigation";
+  var links = {
+    "home": (0, _navigationLink.getNavigationLink)("/", "Home"),
+    "about": (0, _navigationLink.getNavigationLink)("/about", "About us"),
+    "services": (0, _navigationLink.getNavigationLink)("/services", "Services"),
+    "doctors": (0, _navigationLink.getNavigationLink)("/doctors", "Doctors"),
+    "news": (0, _navigationLink.getNavigationLink)("/news", "News"),
+    "contact": (0, _navigationLink.getNavigationLink)("/contact", "Contact")
+  };
+  for (var oneLink in links) {
+    nav.append(links[oneLink]);
+  }
+  var setActiveLink = function setActiveLink() {
+    var link = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+    for (var _oneLink in links) {
+      links[_oneLink].classList.remove("active");
+    }
+    if (link !== "") {
+      links[link].classList.add("active");
+    }
+  };
+  var searchBtn = document.createElement("div");
+  searchBtn.className = "search-btn";
+  searchBtn.innerHTML = "\n        <img class=\"search-img\" src=\"".concat(_search.default, "\">\n        <button class=\"btn\">Appointment</button>\n    ");
+  header.append(container, inner);
   container.append(headerTop);
-  return header;
+  inner.append(nav);
+  nav.append(searchBtn);
+  return {
+    header: header,
+    setActiveLink: setActiveLink
+  };
 }
-},{"../headerTop/headerTop":"src/components/headerTop/headerTop.js","./header.css":"src/components/header/header.css"}],"src/components/main/main.css":[function(require,module,exports) {
+},{"../headerTop/headerTop":"src/components/headerTop/headerTop.js","../navigation/navigationLink":"src/components/navigation/navigationLink.js","../../images/search.svg":"src/images/search.svg","./header.css":"src/components/header/header.css"}],"src/components/main/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -272,7 +334,7 @@ var header = (0, _header.getHeader)();
 // const footer = getFooter();
 
 router.resolve();
-app.append(header);
+app.append(header.header);
 },{"navigo":"node_modules/navigo/lib/navigo.min.js","./src/components/header/header":"src/components/header/header.js","./src/components/main/main":"src/components/main/main.js","./src/components/footer/footer":"src/components/footer/footer.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -298,7 +360,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44077" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35947" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
