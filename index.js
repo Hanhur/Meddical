@@ -11,8 +11,8 @@ export const router = new Navigo("/");
 
 const header = getHeader();
 // const main = getMain();
-// const footer = getFooter();
+const footer = getFooter();
 
 router.resolve();
 
-app.append(header.header);
+app.append(header.header, footer);

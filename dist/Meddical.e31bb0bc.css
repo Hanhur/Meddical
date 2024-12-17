@@ -70,5 +70,94 @@
     font-weight: 500;
     padding: 13px 35px;
 }
+.footer
+{
+    background-color: var(--Signal-blue);
+    margin-top: 65px;
+    padding: 70px 0;
+}
+.footer-block
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 35px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid var(--Light-blue);
+}
+.footer-link-logo
+{
+    font-family: "Yeseva One", serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--Light-blue);
+}
+.footer-text
+{
+    font-size: 18px;
+    color: var(--White);
+    margin-top: 18px;
+    width: 225px;
+}
+.footer-box-text
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: 40px;
+}
+.footer-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    color: var(--White);
+    white-space: nowrap;
+}
+.footer-input
+{
+    background-color: var(--Light-blue);
+    border: none;
+    border-radius: 5px;
+    padding: 14px 66px 14px 10px;
+}
+.footer-input::placeholder
+{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--Signal-blue);
+}
+.footer-form
+{
+    position: relative;
+}
+.footer_img-post
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px;
+    cursor: pointer;
+}
+.footer-social
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+}
+.footer_list
+{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.footer-social-text
+{
+    color: var(--White);
+}
 
 /*# sourceMappingURL=/Meddical.e31bb0bc.css.map */
