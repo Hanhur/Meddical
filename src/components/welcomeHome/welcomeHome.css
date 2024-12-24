@@ -1,0 +1,44 @@
+.welcome-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 114px 0 61px;
+}
+.welome-text
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Twitter-color);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    width: 275px;
+    text-align: center;
+}
+.welcome-title
+{
+    font-family: "Yeseva One", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--Signal-blue);
+    width: 473px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.welcome_text
+{
+    width: 600px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.welcome_box
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.welcome__text
+{
+    color: var(--Twitter-color);
+}

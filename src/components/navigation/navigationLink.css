@@ -1,0 +1,5 @@
+.link:focus
+{
+    font-weight: 600;
+    color: var(--Light-blue);
+}
