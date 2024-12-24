@@ -172,7 +172,38 @@ function getWelcomeHome() {
   container.append(welcomeBlock);
   return section;
 }
-},{"../../images/arrow-right.svg":"src/images/arrow-right.svg","../../images/welcome-bg.png":"src/images/welcome-bg.png","./welcomeHome.css":"src/components/welcomeHome/welcomeHome.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/arrow-right.svg":"src/images/arrow-right.svg","../../images/welcome-bg.png":"src/images/welcome-bg.png","./welcomeHome.css":"src/components/welcomeHome/welcomeHome.css"}],"src/images/book/calendar.svg":[function(require,module,exports) {
+module.exports = "/calendar.c269ccf6.svg";
+},{}],"src/images/book/team.svg":[function(require,module,exports) {
+module.exports = "/team.f8e257b7.svg";
+},{}],"src/images/book/cash.svg":[function(require,module,exports) {
+module.exports = "/cash.9cc79dfe.svg";
+},{}],"src/components/blook/book.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/blook/book.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getBook = getBook;
+var _calendar = _interopRequireDefault(require("../../images/book/calendar.svg"));
+var _team = _interopRequireDefault(require("../../images/book/team.svg"));
+var _cash = _interopRequireDefault(require("../../images/book/cash.svg"));
+require("./book.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getBook() {
+  var container = document.createElement("div");
+  container.className = "container";
+  var bookBlock = document.createElement("div");
+  bookBlock.className = "book-block";
+  bookBlock.innerHTML = "\n        <div class=\"book-box book-1\">\n            <p class=\"book-text\">Book an Appointment</p>\n            <img class=\"book-img\" src=\"".concat(_calendar.default, "\">\n        </div>\n        <div class=\"book-box book-2\">\n            <p class=\"book-text\">Book an Appointment</p>\n            <img class=\"book-img\" src=\"").concat(_team.default, "\">\n        </div>\n        <div class=\"book-box book-3\">\n            <p class=\"book-text\">Book an Appointment</p>\n            <img class=\"book-img\" src=\"").concat(_cash.default, "\">\n        </div>\n    ");
+  container.append(bookBlock);
+  return container;
+}
+},{"../../images/book/calendar.svg":"src/images/book/calendar.svg","../../images/book/team.svg":"src/images/book/team.svg","../../images/book/cash.svg":"src/images/book/cash.svg","./book.css":"src/components/blook/book.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -185,16 +216,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.getPageHome = getPageHome;
 var _homeMenu = require("../../components/homeMenu/homeMenu");
 var _welcomeHome = require("../../components/welcomeHome/welcomeHome");
+var _book = require("../../components/blook/book");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
+var book = (0, _book.getBook)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome);
+  wrapper.append(homeMenu, welcomeHome, book);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/blook/book":"src/components/blook/book.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -219,7 +252,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "32799" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34925" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
