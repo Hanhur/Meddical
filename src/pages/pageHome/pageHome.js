@@ -1,9 +1,11 @@
 import { getHomeMenu } from "../../components/homeMenu/homeMenu";
 import { getWelcomeHome } from "../../components/welcomeHome/welcomeHome";
+import { getBook } from "../../components/blook/book";
 import "./pageHome.css";
 
 const homeMenu = getHomeMenu();
 const welcomeHome = getWelcomeHome();
+const book = getBook();
 
 export function getPageHome()
 {
@@ -12,7 +14,8 @@ export function getPageHome()
 
     wrapper.append(
         homeMenu,
-        welcomeHome
+        welcomeHome,
+        book,
     );
 
     return wrapper;
