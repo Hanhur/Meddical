@@ -41,6 +41,11 @@
     font-weight: 500;
     color: var(--Twitter-color);
 }
+.link:focus
+{
+    font-weight: 600;
+    color: var(--Light-blue);
+}
 .inner
 {
     background-color: var(--Signal-blue);
@@ -70,10 +75,13 @@
     font-weight: 500;
     padding: 13px 35px;
 }
+.main 
+{
+    margin-bottom: 64px;
+}
 .footer
 {
     background-color: var(--Signal-blue);
-    margin-top: 65px;
     padding: 70px 0;
 }
 .footer-block
