@@ -79,6 +79,10 @@
     color: var(--White);
     background-color: var(--Twitter-color);
 }
+.welcome-block
+{
+    margin-bottom: 64px;
+}
 .welcome-box
 {
     display: flex;
@@ -124,5 +128,111 @@
     color: var(--Twitter-color);
 }
 
+.services-block
+{
+    margin-bottom: 64px;
+}
+.services-text
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Twitter-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.services-title
+{
+    font-family: "Yeseva One", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--Signal-blue);
+    text-align: center;
+    margin-bottom: 64px;
+}
+.services-box
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 20px;
+}
+.services-all
+{
+    border-radius: 5px;
+    border: 1px solid var(--Signal-blue);
+    width: 157px;
+}
+.services-chechup
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 34px;
+    cursor: pointer;
+}
+.services-chechup:hover
+{
+    color: var(--Light-blue);
+    background-color: var(--Signal-blue);
+}
+.services-img
+{
+    width: 32px;
+    margin-bottom: 8px;
+}
+.services_text
+{
+    white-space: nowrap;
+    margin-bottom: 24px;
+}
+.services-btn
+{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 54px;
+    white-space: nowrap;
+    color: var(--Light-blue);
+    background-color: var(--Signal-blue);
+}
+.services-patients
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27px;
+    width: 470px;
+}
+.services-passion
+{
+    font-size: 26px;
+    font-weight: 500;
+    width: 447px;
+    margin-bottom: 24px;
+    color: black;
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 38px;
+    margin-bottom: 32px;
+}
+.services-item
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.services_passion
+{
+    width: 420px;
+    margin-bottom: 16px;
+}
+.services-images
+{
+    display: flex;
+    flex-direction: column;
+    gap: 21px 0;
+}
 
 /*# sourceMappingURL=/pageHome.46aef0d8.css.map */

@@ -185,7 +185,53 @@ function getWelcomeHome() {
   container.append(welcomeBlock);
   return section;
 }
-},{"../../images/arrow-right.svg":"src/images/arrow-right.svg","../../images/welcome-bg.png":"src/images/welcome-bg.png","./welcomeHome.css":"src/components/welcomeHome/welcomeHome.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/arrow-right.svg":"src/images/arrow-right.svg","../../images/welcome-bg.png":"src/images/welcome-bg.png","./welcomeHome.css":"src/components/welcomeHome/welcomeHome.css"}],"src/images/services/checkup.svg":[function(require,module,exports) {
+module.exports = "/checkup.95367307.svg";
+},{}],"src/images/services/cardiograma.svg":[function(require,module,exports) {
+module.exports = "/cardiograma.9ca7f37a.svg";
+},{}],"src/images/services/testing.svg":[function(require,module,exports) {
+module.exports = "/testing.67518bcc.svg";
+},{}],"src/images/services/blood-bank.svg":[function(require,module,exports) {
+module.exports = "/blood-bank.85258c9b.svg";
+},{}],"src/images/services/rectangle.svg":[function(require,module,exports) {
+module.exports = "/rectangle.363d29d8.svg";
+},{}],"src/images/services/images-1.png":[function(require,module,exports) {
+module.exports = "/images-1.407a2661.png";
+},{}],"src/images/services/images-2.png":[function(require,module,exports) {
+module.exports = "/images-2.0caf7df2.png";
+},{}],"src/components/services/services.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/services/services.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getServices = getServices;
+var _checkup = _interopRequireDefault(require("../../images/services/checkup.svg"));
+var _cardiograma = _interopRequireDefault(require("../../images/services/cardiograma.svg"));
+var _testing = _interopRequireDefault(require("../../images/services/testing.svg"));
+var _bloodBank = _interopRequireDefault(require("../../images/services/blood-bank.svg"));
+var _rectangle = _interopRequireDefault(require("../../images/services/rectangle.svg"));
+var _images = _interopRequireDefault(require("../../images/services/images-1.png"));
+var _images2 = _interopRequireDefault(require("../../images/services/images-2.png"));
+require("./services.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getServices() {
+  var section = document.createElement("div");
+  section.className = "section-services";
+  var container = document.createElement("div");
+  container.className = "container";
+  var servicesBlock = document.createElement("div");
+  servicesBlock.className = "services-block";
+  servicesBlock.innerHTML = "\n        <p class=\"services-text\">Care you can believe in</p>\n        <h2 class=\"services-title\">Our Services</h2>\n        <div class=\"services-box\">\n            <div class=\"services-all\">\n                <div class=\"services-chechup\">\n                    <img class=\"services-img\" src=\"".concat(_checkup.default, "\">\n                    <p class=\"services_text\">Free Checkup</p>\n                </div>\n                 <div class=\"services-chechup\">\n                    <img class=\"services-img\" src=\"").concat(_cardiograma.default, "\">\n                    <p class=\"services_text\">Cardiograma</p>\n                </div>\n                <div class=\"services-chechup\">\n                    <img class=\"services-img\" src=\"").concat(_testing.default, "\">\n                    <p class=\"services_text\">Dna Testing</p>\n                </div>\n                <div class=\"services-chechup\">\n                    <img class=\"services-img\" src=\"").concat(_bloodBank.default, "\">\n                    <p class=\"services_text\">Blood Bank</p>\n                </div>\n                <div class=\"services_chechup\"> \n                    <button class=\"services-btn\">View All</button>\n                </div>\n            </div>\n            <div class=\"services-patients\">\n                <p class=\"services-passion\">A passion for putting patients first.</p>\n                <ul class=\"services-list\">\n                    <li class=\"services-item\">\n                        <img class=\"services-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                        <p class=\"services-item-text\">A Passion for Healing</p>\n                    </li>\n                    <li class=\"services-item\">\n                        <img class=\"services-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                        <p class=\"services-item-text\">All our best</p>\n                    </li>\n                    <li class=\"services-item\">\n                        <img class=\"services-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                        <p class=\"services-item-text\">A Legacy of Excellence</p>\n                    </li>\n                    <li class=\"services-item\">\n                        <img class=\"services-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                        <p class=\"services-item-text\">5-Star Care</p>\n                    </li>\n                    <li class=\"services-item\">\n                        <img class=\"services-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                        <p class=\"services-item-text\">Believe in Us</p>\n                    </li>\n                    <li class=\"services-item\">\n                        <img class=\"services-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                        <p class=\"services-item-text\">Always Caring</p>\n                    </li>\n                </ul>\n                <p class=\"services_passion\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. \n                    Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. \n                    Velit nascetur proin massa in. Consequat faucibus porttitor enim et.\n                </p>\n                <p class=\"services_passion\">\n                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. \n                    Convallis felis vitae tortor augue. Velit nascetur proin massa in.\n                </p>\n            </div>\n            <div class=\"services-images\">\n                <img src=\"").concat(_images.default, "\">\n                <img src=\"").concat(_images2.default, "\">\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(servicesBlock);
+  return section;
+}
+},{"../../images/services/checkup.svg":"src/images/services/checkup.svg","../../images/services/cardiograma.svg":"src/images/services/cardiograma.svg","../../images/services/testing.svg":"src/images/services/testing.svg","../../images/services/blood-bank.svg":"src/images/services/blood-bank.svg","../../images/services/rectangle.svg":"src/images/services/rectangle.svg","../../images/services/images-1.png":"src/images/services/images-1.png","../../images/services/images-2.png":"src/images/services/images-2.png","./services.css":"src/components/services/services.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -198,16 +244,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.getPageHome = getPageHome;
 var _homeMenu = require("../../components/homeMenu/homeMenu");
 var _welcomeHome = require("../../components/welcomeHome/welcomeHome");
+var _services = require("../../components/services/services");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
+var services = (0, _services.getServices)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome);
+  wrapper.append(homeMenu, welcomeHome, services);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -232,7 +280,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36531" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46151" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
