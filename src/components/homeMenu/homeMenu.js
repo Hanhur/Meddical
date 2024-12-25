@@ -1,7 +1,9 @@
 import "./homeMenu.css";
+import calendar from "../../images/book/calendar.svg";
+import team from "../../images/book/team.svg";
+import cash from "../../images/book/cash.svg";
 
-export function getHomeMenu() 
-{
+export function getHomeMenu() {
     const section = document.createElement("section");
     section.className = "section-home";
 
@@ -16,8 +18,25 @@ export function getHomeMenu()
         <button class="home-block-btn">Our Services</button>
     `;
 
+    const bookBlock = document.createElement("div");
+    bookBlock.className = "book-block";
+    bookBlock.innerHTML = `
+            <div class="book-box book-1">
+                <p class="book-text">Book an Appointment</p>
+                <img class="book-img" src="${calendar}">
+            </div>
+            <div class="book-box book-2">
+                <p class="book-text">Book an Appointment</p>
+                <img class="book-img" src="${team}">
+            </div>
+            <div class="book-box book-3">
+                <p class="book-text">Book an Appointment</p>
+                <img class="book-img" src="${cash}">
+            </div>
+        `;
+
     section.append(container);
-    container.append(homeBlock);
+    container.append(homeBlock, bookBlock);
 
     return section;
 }

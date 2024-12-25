@@ -10,7 +10,6 @@
 .home-block
 {
     padding: 167px 0 117px;
-    position: relative;
 }
 .home-block-text
 {
@@ -39,7 +38,47 @@
     width: 170px;
     padding: 13px 35px;
 }
-
+.book-block 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 21px;
+}
+.book-box
+{
+    display: flex;
+    align-items: center;
+    gap: 0 55px;
+}
+.book-img
+{
+    width: 50px;
+}
+.book-1
+{
+    width: 316px;
+    border-radius: 5px;
+    padding: 25px 20px;
+    color: var(--White);
+    background-color: var(--Signal-blue);
+}
+.book-2
+{
+    width: 316px;
+    border-radius: 5px;
+    padding: 28px 20px;
+    color: var(--Signal-blue);
+    background-color: var(--Light-blue);
+}
+.book-3
+{
+    width: 316px;
+    border-radius: 5px;
+    padding: 31px 20px;
+    color: var(--White);
+    background-color: var(--Twitter-color);
+}
 .welcome-box
 {
     display: flex;
@@ -85,51 +124,5 @@
     color: var(--Twitter-color);
 }
 
-.book-block 
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 21px;
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -300px;
-}
-.book-box
-{
-    display: flex;
-    align-items: center;
-    gap: 0 55px;
-}
-.book-img
-{
-    width: 50px;
-}
-.book-1
-{
-    width: 316px;
-    border-radius: 5px;
-    padding: 25px 20px;
-    color: var(--White);
-    background-color: var(--Signal-blue);
-}
-.book-2
-{
-    width: 316px;
-    border-radius: 5px;
-    padding: 28px 20px;
-    color: var(--Signal-blue);
-    background-color: var(--Light-blue);
-}
-.book-3
-{
-    width: 316px;
-    border-radius: 5px;
-    padding: 31px 20px;
-    color: var(--White);
-    background-color: var(--Twitter-color);
-}
 
 /*# sourceMappingURL=/pageHome.46aef0d8.css.map */
