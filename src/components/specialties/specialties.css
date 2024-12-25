@@ -1,4 +1,4 @@
-.specialties-block
+.specialties_box
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -10,11 +10,31 @@
     align-items: center;
     border: 1px solid #C4C4C4;
     padding: 50px 45px;
+    gap: 8px 0;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .specialties-box:hover
 {
     color: var(--Light-blue);
     background-color: var(--Signal-blue);
     border-radius: 5px;
-    cursor: pointer;
+}
+.specialties_text
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Twitter-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.specialties-title
+{
+    font-family: "Yeseva One", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--Signal-blue);
+    text-align: center;
+    margin-bottom: 54px;
 }
