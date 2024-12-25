@@ -1,3 +1,7 @@
+.welcome-block
+{
+    margin-bottom: 64px;
+}
 .welcome-box
 {
     display: flex;
