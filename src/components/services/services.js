@@ -10,7 +10,7 @@ import "./services.css";
 
 export function getServices()
 {
-    const section = document.createElement("div");
+    const section = document.createElement("section");
     section.className = "section-services";
 
     const container = document.createElement("div");

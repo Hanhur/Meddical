@@ -234,5 +234,25 @@
     flex-direction: column;
     gap: 21px 0;
 }
+.specialties-block
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.specialties-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    padding: 50px 45px;
+}
+.specialties-box:hover
+{
+    color: var(--Light-blue);
+    background-color: var(--Signal-blue);
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /*# sourceMappingURL=/pageHome.46aef0d8.css.map */

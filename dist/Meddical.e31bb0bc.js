@@ -450,7 +450,7 @@ router.on("/", /*#__PURE__*/_asyncToGenerator(/*#__PURE__*/_regeneratorRuntime()
 })));
 router.resolve();
 app.append(header.header, main, footer);
-},{"navigo":"node_modules/navigo/lib/navigo.min.js","./src/components/header/header":"src/components/header/header.js","./src/components/main/main":"src/components/main/main.js","./src/components/footer/footer":"src/components/footer/footer.js","_bundle_loader":"node_modules/parcel-bundler/src/builtins/bundle-loader.js","./src/pages/pageHome/pageHome":[["pageHome.46aef0d8.js","src/pages/pageHome/pageHome.js"],"pageHome.46aef0d8.js.map","pageHome.46aef0d8.css",["calendar.c269ccf6.svg","src/images/book/calendar.svg"],["team.f8e257b7.svg","src/images/book/team.svg"],["cash.9cc79dfe.svg","src/images/book/cash.svg"],["arrow-right.b63a9d8d.svg","src/images/arrow-right.svg"],["welcome-bg.30b488d3.png","src/images/welcome-bg.png"],["checkup.95367307.svg","src/images/services/checkup.svg"],["cardiograma.9ca7f37a.svg","src/images/services/cardiograma.svg"],["testing.67518bcc.svg","src/images/services/testing.svg"],["blood-bank.85258c9b.svg","src/images/services/blood-bank.svg"],["rectangle.363d29d8.svg","src/images/services/rectangle.svg"],["images-1.407a2661.png","src/images/services/images-1.png"],["images-2.0caf7df2.png","src/images/services/images-2.png"],"src/pages/pageHome/pageHome.js"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"navigo":"node_modules/navigo/lib/navigo.min.js","./src/components/header/header":"src/components/header/header.js","./src/components/main/main":"src/components/main/main.js","./src/components/footer/footer":"src/components/footer/footer.js","_bundle_loader":"node_modules/parcel-bundler/src/builtins/bundle-loader.js","./src/pages/pageHome/pageHome":[["pageHome.46aef0d8.js","src/pages/pageHome/pageHome.js"],"pageHome.46aef0d8.js.map","pageHome.46aef0d8.css",["calendar.c269ccf6.svg","src/images/book/calendar.svg"],["team.f8e257b7.svg","src/images/book/team.svg"],["cash.9cc79dfe.svg","src/images/book/cash.svg"],["arrow-right.b63a9d8d.svg","src/images/arrow-right.svg"],["welcome-bg.30b488d3.png","src/images/welcome-bg.png"],["checkup.95367307.svg","src/images/services/checkup.svg"],["cardiograma.9ca7f37a.svg","src/images/services/cardiograma.svg"],["testing.67518bcc.svg","src/images/services/testing.svg"],["blood-bank.85258c9b.svg","src/images/services/blood-bank.svg"],["rectangle.363d29d8.svg","src/images/services/rectangle.svg"],["images-1.407a2661.png","src/images/services/images-1.png"],["images-2.0caf7df2.png","src/images/services/images-2.png"],["specialties.a02c99b7.svg","src/images/specialties.svg"],"src/pages/pageHome/pageHome.js"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -475,7 +475,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46151" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39969" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

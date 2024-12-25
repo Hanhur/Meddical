@@ -220,7 +220,7 @@ var _images2 = _interopRequireDefault(require("../../images/services/images-2.pn
 require("./services.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getServices() {
-  var section = document.createElement("div");
+  var section = document.createElement("section");
   section.className = "section-services";
   var container = document.createElement("div");
   container.className = "container";
@@ -231,7 +231,35 @@ function getServices() {
   container.append(servicesBlock);
   return section;
 }
-},{"../../images/services/checkup.svg":"src/images/services/checkup.svg","../../images/services/cardiograma.svg":"src/images/services/cardiograma.svg","../../images/services/testing.svg":"src/images/services/testing.svg","../../images/services/blood-bank.svg":"src/images/services/blood-bank.svg","../../images/services/rectangle.svg":"src/images/services/rectangle.svg","../../images/services/images-1.png":"src/images/services/images-1.png","../../images/services/images-2.png":"src/images/services/images-2.png","./services.css":"src/components/services/services.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/services/checkup.svg":"src/images/services/checkup.svg","../../images/services/cardiograma.svg":"src/images/services/cardiograma.svg","../../images/services/testing.svg":"src/images/services/testing.svg","../../images/services/blood-bank.svg":"src/images/services/blood-bank.svg","../../images/services/rectangle.svg":"src/images/services/rectangle.svg","../../images/services/images-1.png":"src/images/services/images-1.png","../../images/services/images-2.png":"src/images/services/images-2.png","./services.css":"src/components/services/services.css"}],"src/images/specialties.svg":[function(require,module,exports) {
+module.exports = "/specialties.a02c99b7.svg";
+},{}],"src/components/specialties/specialties.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/specialties/specialties.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getSpecialties = getSpecialties;
+var _specialties = _interopRequireDefault(require("../../images/specialties.svg"));
+require("./specialties.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getSpecialties() {
+  var section = document.createElement("section");
+  section.className = "section-specialties";
+  var container = document.createElement("div");
+  container.className = "container";
+  var specialtiesBlock = document.createElement("div");
+  specialtiesBlock.className = "specialties-block";
+  specialtiesBlock.innerHTML = "\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"".concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Neurology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Bones</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Oncology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Otorhinolaryngology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Ophthalmology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Cardiovascular</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Pulmonology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Renal Medicine</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Gastroenterology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Urology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Dermatology</p>\n        </div>\n        <div class=\"specialties-box\">\n            <img class=\"specialties-img\" src=\"").concat(_specialties.default, "\">\n            <p class=\"specialties-text\">Gynaecology</p>\n        </div>\n    ");
+  section.append(container);
+  container.append(specialtiesBlock);
+  return section;
+}
+},{"../../images/specialties.svg":"src/images/specialties.svg","./specialties.css":"src/components/specialties/specialties.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -245,17 +273,19 @@ exports.getPageHome = getPageHome;
 var _homeMenu = require("../../components/homeMenu/homeMenu");
 var _welcomeHome = require("../../components/welcomeHome/welcomeHome");
 var _services = require("../../components/services/services");
+var _specialties = require("../../components/specialties/specialties");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
 var services = (0, _services.getServices)();
+var specialties = (0, _specialties.getSpecialties)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome, services);
+  wrapper.append(homeMenu, welcomeHome, services, specialties);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -280,7 +310,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46151" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39969" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
