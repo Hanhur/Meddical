@@ -287,7 +287,50 @@ function getBookAppointment() {
   container.append(bookAppointmentBlock);
   return section;
 }
-},{"../../images/book-vector.svg":"src/images/book-vector.svg","./bookAppointment.css":"src/components/bookAppointment/bookAppointment.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/book-vector.svg":"src/images/book-vector.svg","./bookAppointment.css":"src/components/bookAppointment/bookAppointment.css"}],"src/images/doctors/images1.png":[function(require,module,exports) {
+module.exports = "/images1.2ca1384f.png";
+},{}],"src/images/doctors/images2.png":[function(require,module,exports) {
+module.exports = "/images2.3de9e8a4.png";
+},{}],"src/images/doctors/images3.png":[function(require,module,exports) {
+module.exports = "/images3.379a1b45.png";
+},{}],"src/images/doctors/linkedln.svg":[function(require,module,exports) {
+module.exports = "/linkedln.a215d400.svg";
+},{}],"src/images/doctors/facebook.svg":[function(require,module,exports) {
+module.exports = "/facebook.6a5b9146.svg";
+},{}],"src/images/doctors/instagram.svg":[function(require,module,exports) {
+module.exports = "/instagram.65b10378.svg";
+},{}],"src/components/doctors/doctors.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/doctors/doctors.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getDoctors = getDoctors;
+var _images = _interopRequireDefault(require("../../images/doctors/images1.png"));
+var _images2 = _interopRequireDefault(require("../../images/doctors/images2.png"));
+var _images3 = _interopRequireDefault(require("../../images/doctors/images3.png"));
+var _linkedln = _interopRequireDefault(require("../../images/doctors/linkedln.svg"));
+var _facebook = _interopRequireDefault(require("../../images/doctors/facebook.svg"));
+var _instagram = _interopRequireDefault(require("../../images/doctors/instagram.svg"));
+require("./doctors.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getDoctors() {
+  var section = document.createElement("section");
+  section.className = "section-doctors";
+  var container = document.createElement("div");
+  container.className = "container";
+  var doctorsBlock = document.createElement("div");
+  doctorsBlock.className = "doctors-block";
+  doctorsBlock.innerHTML = "\n        <p class=\"doctors-text\">Trusted Care</p>\n        <h2 class=\"doctors-title\">Our Doctors</h2>\n        <div class=\"doctors-inner\">\n            <div class=\"doctors-box\">\n                <img class=\"doctors-img\" src=\"".concat(_images.default, "\" alt=\"\">\n                <p class=\"docrors-box-text\">Doctor\u2019s Name</p>\n                <h3 class=\"docrors-box-title\">Neurology</h3>\n                <div class=\"doctors-social\">\n                    <ul class=\"doctors-list\">\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_linkedln.default, "\" alt=\"Linkedln\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n                <button class=\"doctors-btn\">View Profile</button>\n            </div>\n            <div class=\"doctors-box\">\n                <img class=\"doctors-img\" src=\"").concat(_images2.default, "\" alt=\"\">\n                <p class=\"docrors-box-text\">Doctor\u2019s Name</p>\n                <h3 class=\"docrors-box-title\">Neurology</h3>\n                <div class=\"doctors-social\">\n                    <ul class=\"doctors-list\">\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_linkedln.default, "\" alt=\"Linkedln\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n                <button class=\"doctors-btn\">View Profile</button>\n            </div>\n            <div class=\"doctors-box\">\n                <img class=\"doctors-img\" src=\"").concat(_images3.default, "\" alt=\"\">\n                <p class=\"docrors-box-text\">Doctor\u2019s Name</p>\n                <h3 class=\"docrors-box-title\">Neurology</h3>\n                <div class=\"doctors-social\">\n                    <ul class=\"doctors-list\">\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_linkedln.default, "\" alt=\"Linkedln\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n                <button class=\"doctors-btn\">View Profile</button>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(doctorsBlock);
+  return section;
+}
+},{"../../images/doctors/images1.png":"src/images/doctors/images1.png","../../images/doctors/images2.png":"src/images/doctors/images2.png","../../images/doctors/images3.png":"src/images/doctors/images3.png","../../images/doctors/linkedln.svg":"src/images/doctors/linkedln.svg","../../images/doctors/facebook.svg":"src/images/doctors/facebook.svg","../../images/doctors/instagram.svg":"src/images/doctors/instagram.svg","./doctors.css":"src/components/doctors/doctors.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -303,19 +346,21 @@ var _welcomeHome = require("../../components/welcomeHome/welcomeHome");
 var _services = require("../../components/services/services");
 var _specialties = require("../../components/specialties/specialties");
 var _bookAppointment = require("../../components/bookAppointment/bookAppointment");
+var _doctors = require("../../components/doctors/doctors");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
 var services = (0, _services.getServices)();
 var specialties = (0, _specialties.getSpecialties)();
 var book = (0, _bookAppointment.getBookAppointment)();
+var doctors = (0, _doctors.getDoctors)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome, services, specialties, book);
+  wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","../../components/doctors/doctors":"src/components/doctors/doctors.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -340,7 +385,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43151" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41121" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
