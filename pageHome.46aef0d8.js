@@ -259,7 +259,35 @@ function getSpecialties() {
   container.append(specialtiesBlock);
   return section;
 }
-},{"../../images/specialties.svg":"src/images/specialties.svg","./specialties.css":"src/components/specialties/specialties.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/specialties.svg":"src/images/specialties.svg","./specialties.css":"src/components/specialties/specialties.css"}],"src/images/book-vector.svg":[function(require,module,exports) {
+module.exports = "/book-vector.7ce14b28.svg";
+},{}],"src/components/bookAppointment/bookAppointment.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../images/book.bg.png":[["book.bg.957d345b.png","src/images/book.bg.png"],"src/images/book.bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/bookAppointment/bookAppointment.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getBookAppointment = getBookAppointment;
+var _bookVector = _interopRequireDefault(require("../../images/book-vector.svg"));
+require("./bookAppointment.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getBookAppointment() {
+  var section = document.createElement("section");
+  section.className = "section-book";
+  var container = document.createElement("div");
+  container.className = "container";
+  var bookAppointmentBlock = document.createElement("div");
+  bookAppointmentBlock.className = "book-appointment";
+  bookAppointmentBlock.innerHTML = "\n        <div class=\"book-appointment-block\">\n            <h2 class=\"book-appointment-title\">Book an Appointment</h2>\n            <p class=\"book-appointment-text\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. \n                Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.\n            </p>\n        </div>\n        <div class=\"book-appointment-box\">\n            <form class=\"book-appointment-form\">\n                <div class=\"book-appointment_box\">\n                    <input class=\"book-appointment-input\" type=\"text\" placeholder=\"Name\">\n                </div>\n                <div class=\"book-appointment_box\">\n                    <button class=\"book-appointment_btn\" type=\"button\">Gender\n                        <img class=\"book-appointment-img\" src=\"".concat(_bookVector.default, "\" alt=\"Vector\">\n                    </button>\n                </div>\n                <div class=\"book-appointment_box\">\n                    <input class=\"book-appointment-input\" type=\"text\" placeholder=\"Email\">\n                </div>\n                <div class=\"book-appointment_box\">\n                    <input class=\"book-appointment-input\" type=\"text\" placeholder=\"Phone\">\n                </div>\n                <div class=\"book-appointment_box\">\n                    <button class=\"book-appointment_btn\" type=\"button\">Data\n                        <img class=\"book-appointment-img\" src=\"").concat(_bookVector.default, "\" alt=\"Vector\">\n                    </button>\n                </div>\n                <div class=\"book-appointment_box\">\n                    <button class=\"book-appointment_btn\" type=\"button\">Time\n                        <img class=\"book-appointment-img\" src=\"").concat(_bookVector.default, "\" alt=\"Vector\">\n                    </button>\n                </div>\n                <div class=\"book-appointment_box\">\n                    <button class=\"book-appointment_btn\" type=\"button\">Doctor\n                        <img class=\"book-appointment-img\" src=\"").concat(_bookVector.default, "\" alt=\"Vector\">\n                    </button>\n                </div>\n                <div class=\"book-appointment_box\">\n                    <button class=\"book-appointment_btn\" type=\"button\">Department\n                        <img class=\"book-appointment-img\" src=\"").concat(_bookVector.default, "\" alt=\"Vector\">\n                    </button>\n                </div>\n            </form>\n            <div class=\"book-textarea\">\n                <textarea class=\"book-appointment-textarea\" placeholder=\"Message\"></textarea>\n                <button class=\"book-appointment-btn\" type=\"submit\">SUBMIT</button>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(bookAppointmentBlock);
+  return section;
+}
+},{"../../images/book-vector.svg":"src/images/book-vector.svg","./bookAppointment.css":"src/components/bookAppointment/bookAppointment.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -274,18 +302,20 @@ var _homeMenu = require("../../components/homeMenu/homeMenu");
 var _welcomeHome = require("../../components/welcomeHome/welcomeHome");
 var _services = require("../../components/services/services");
 var _specialties = require("../../components/specialties/specialties");
+var _bookAppointment = require("../../components/bookAppointment/bookAppointment");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
 var services = (0, _services.getServices)();
 var specialties = (0, _specialties.getSpecialties)();
+var book = (0, _bookAppointment.getBookAppointment)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome, services, specialties);
+  wrapper.append(homeMenu, welcomeHome, services, specialties, book);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -310,7 +340,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41837" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43151" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
