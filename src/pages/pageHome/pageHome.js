@@ -5,6 +5,8 @@ import { getSpecialties } from "../../components/specialties/specialties";
 import { getBookAppointment } from "../../components/bookAppointment/bookAppointment";
 import { getDoctors } from "../../components/doctors/doctors";
 import { getNewsInformation } from "../../components/newsInformation/newsInformation";
+import { getContact } from "../../components/contact/contact";
+
 import "./pageHome.css";
 
 const homeMenu = getHomeMenu();
@@ -14,6 +16,7 @@ const specialties = getSpecialties();
 const book = getBookAppointment();
 const doctors = getDoctors();
 const news = getNewsInformation();
+const contact = getContact();
 
 export function getPageHome()
 {
@@ -28,6 +31,7 @@ export function getPageHome()
         book,
         doctors,
         news,
+        contact
     );
 
     return wrapper;

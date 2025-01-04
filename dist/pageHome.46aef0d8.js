@@ -364,7 +364,44 @@ function getNewsInformation() {
   container.append(newsBlock);
   return section;
 }
-},{"../../images/newsInformation/images.png":"src/images/newsInformation/images.png","../../images/newsInformation/eye.svg":"src/images/newsInformation/eye.svg","../../images/newsInformation/heart.svg":"src/images/newsInformation/heart.svg","./newsInformation.css":"src/components/newsInformation/newsInformation.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/newsInformation/images.png":"src/images/newsInformation/images.png","../../images/newsInformation/eye.svg":"src/images/newsInformation/eye.svg","../../images/newsInformation/heart.svg":"src/images/newsInformation/heart.svg","./newsInformation.css":"src/components/newsInformation/newsInformation.css"}],"src/images/contact/phone.svg":[function(require,module,exports) {
+module.exports = "/phone.b07cb107.svg";
+},{}],"src/images/contact/location.svg":[function(require,module,exports) {
+module.exports = "/location.7c36a89f.svg";
+},{}],"src/images/contact/email.svg":[function(require,module,exports) {
+module.exports = "/email.50ec0939.svg";
+},{}],"src/images/contact/hours.svg":[function(require,module,exports) {
+module.exports = "/hours.c922882b.svg";
+},{}],"src/components/contact/contact.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/contact/contact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getContact = getContact;
+var _phone = _interopRequireDefault(require("../../images/contact/phone.svg"));
+var _location = _interopRequireDefault(require("../../images/contact/location.svg"));
+var _email = _interopRequireDefault(require("../../images/contact/email.svg"));
+var _hours = _interopRequireDefault(require("../../images/contact/hours.svg"));
+require("./contact.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getContact() {
+  var section = document.createElement("section");
+  section.className = "section-contact";
+  var container = document.createElement("div");
+  container.className = "container";
+  var contactBlock = document.createElement("div");
+  contactBlock.className = "contact-block";
+  contactBlock.innerHTML = "\n        <p class=\"contact-block-text\">Get in touch</p>\n        <h2 class=\"contact-block-title\">Contact</h2>\n        <div class=\"contact-inner\">\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"".concat(_phone.default, "\">\n                <p class=\"contact-box-text\">Emergency</p>\n                <address class=\"contact-address\">\n                    <ul class=\"contact-list\">\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"tel:237681812255\">(237) 681-812-255</a>\n                        </li>\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"tel:237666331894\">(237) 666-331-894</a>\n                        </li>\n                    </ul>\n                </address>\n            </div>\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"").concat(_location.default, "\">\n                <p class=\"contact-box-text\">Location</p>\n                <p class=\"contact-box_text\">0123 Some place</p>\n                <p class=\"contact-box_text\">9876 Some country</p>\n            </div>\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"").concat(_email.default, "\">\n                <p class=\"contact-box-text\">Email</p>\n                <address class=\"contact-address\">\n                    <ul class=\"contact-list\">\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"mailto:fildineeesoe@gmil.com\">fildineeesoe@gmil.com</a>\n                        </li>\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"mailto:myebstudios@gmail.com\">myebstudios@gmail.com</a>\n                        </li>\n                    </ul>\n                </address>\n            </div>\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"").concat(_hours.default, "\">\n                <p class=\"contact-box-text\">Working Hours</p>\n                <p class=\"contact-box_text\">Mon-Sat 09:00-20:00</p>\n                <p class=\"contact-box_text\">Sunday Emergency only</p>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(contactBlock);
+  return section;
+}
+},{"../../images/contact/phone.svg":"src/images/contact/phone.svg","../../images/contact/location.svg":"src/images/contact/location.svg","../../images/contact/email.svg":"src/images/contact/email.svg","../../images/contact/hours.svg":"src/images/contact/hours.svg","./contact.css":"src/components/contact/contact.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -382,6 +419,7 @@ var _specialties = require("../../components/specialties/specialties");
 var _bookAppointment = require("../../components/bookAppointment/bookAppointment");
 var _doctors = require("../../components/doctors/doctors");
 var _newsInformation = require("../../components/newsInformation/newsInformation");
+var _contact = require("../../components/contact/contact");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
@@ -390,13 +428,14 @@ var specialties = (0, _specialties.getSpecialties)();
 var book = (0, _bookAppointment.getBookAppointment)();
 var doctors = (0, _doctors.getDoctors)();
 var news = (0, _newsInformation.getNewsInformation)();
+var contact = (0, _contact.getContact)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors, news);
+  wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors, news, contact);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","../../components/doctors/doctors":"src/components/doctors/doctors.js","../../components/newsInformation/newsInformation":"src/components/newsInformation/newsInformation.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","../../components/doctors/doctors":"src/components/doctors/doctors.js","../../components/newsInformation/newsInformation":"src/components/newsInformation/newsInformation.js","../../components/contact/contact":"src/components/contact/contact.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -421,7 +460,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38567" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41851" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
