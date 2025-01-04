@@ -330,7 +330,41 @@ function getDoctors() {
   container.append(doctorsBlock);
   return section;
 }
-},{"../../images/doctors/images1.png":"src/images/doctors/images1.png","../../images/doctors/images2.png":"src/images/doctors/images2.png","../../images/doctors/images3.png":"src/images/doctors/images3.png","../../images/doctors/linkedln.svg":"src/images/doctors/linkedln.svg","../../images/doctors/facebook.svg":"src/images/doctors/facebook.svg","../../images/doctors/instagram.svg":"src/images/doctors/instagram.svg","./doctors.css":"src/components/doctors/doctors.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../images/doctors/images1.png":"src/images/doctors/images1.png","../../images/doctors/images2.png":"src/images/doctors/images2.png","../../images/doctors/images3.png":"src/images/doctors/images3.png","../../images/doctors/linkedln.svg":"src/images/doctors/linkedln.svg","../../images/doctors/facebook.svg":"src/images/doctors/facebook.svg","../../images/doctors/instagram.svg":"src/images/doctors/instagram.svg","./doctors.css":"src/components/doctors/doctors.css"}],"src/images/newsInformation/images.png":[function(require,module,exports) {
+module.exports = "/images.8d9e5ba7.png";
+},{}],"src/images/newsInformation/eye.svg":[function(require,module,exports) {
+module.exports = "/eye.2c2e8edd.svg";
+},{}],"src/images/newsInformation/heart.svg":[function(require,module,exports) {
+module.exports = "/heart.1829f8ec.svg";
+},{}],"src/components/newsInformation/newsInformation.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/newsInformation/newsInformation.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getNewsInformation = getNewsInformation;
+var _images = _interopRequireDefault(require("../../images/newsInformation/images.png"));
+var _eye = _interopRequireDefault(require("../../images/newsInformation/eye.svg"));
+var _heart = _interopRequireDefault(require("../../images/newsInformation/heart.svg"));
+require("./newsInformation.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getNewsInformation() {
+  var section = document.createElement("section");
+  section.className = "section-news";
+  var container = document.createElement("div");
+  container.className = "container";
+  var newsBlock = document.createElement("div");
+  newsBlock.className = "news-block";
+  newsBlock.innerHTML = "\n        <p class=\"news-block-text\">Better information, Better health</p>\n        <h2 class=\"news-block-title\">News</h2>\n        <div class=\"news-inner\">\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"".concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"").concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"").concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"").concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(newsBlock);
+  return section;
+}
+},{"../../images/newsInformation/images.png":"src/images/newsInformation/images.png","../../images/newsInformation/eye.svg":"src/images/newsInformation/eye.svg","../../images/newsInformation/heart.svg":"src/images/newsInformation/heart.svg","./newsInformation.css":"src/components/newsInformation/newsInformation.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -347,6 +381,7 @@ var _services = require("../../components/services/services");
 var _specialties = require("../../components/specialties/specialties");
 var _bookAppointment = require("../../components/bookAppointment/bookAppointment");
 var _doctors = require("../../components/doctors/doctors");
+var _newsInformation = require("../../components/newsInformation/newsInformation");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
@@ -354,13 +389,14 @@ var services = (0, _services.getServices)();
 var specialties = (0, _specialties.getSpecialties)();
 var book = (0, _bookAppointment.getBookAppointment)();
 var doctors = (0, _doctors.getDoctors)();
+var news = (0, _newsInformation.getNewsInformation)();
 function getPageHome() {
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
-  wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors);
+  wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors, news);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","../../components/doctors/doctors":"src/components/doctors/doctors.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","../../components/doctors/doctors":"src/components/doctors/doctors.js","../../components/newsInformation/newsInformation":"src/components/newsInformation/newsInformation.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -385,7 +421,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41121" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38567" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

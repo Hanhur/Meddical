@@ -4,6 +4,7 @@ import { getServices } from "../../components/services/services";
 import { getSpecialties } from "../../components/specialties/specialties";
 import { getBookAppointment } from "../../components/bookAppointment/bookAppointment";
 import { getDoctors } from "../../components/doctors/doctors";
+import { getNewsInformation } from "../../components/newsInformation/newsInformation";
 import "./pageHome.css";
 
 const homeMenu = getHomeMenu();
@@ -12,6 +13,7 @@ const services = getServices();
 const specialties = getSpecialties();
 const book = getBookAppointment();
 const doctors = getDoctors();
+const news = getNewsInformation();
 
 export function getPageHome()
 {
@@ -25,6 +27,7 @@ export function getPageHome()
         specialties,
         book,
         doctors,
+        news,
     );
 
     return wrapper;
