@@ -20,10 +20,10 @@ const contact = getContact();
 
 export function getPageHome()
 {
-    const wrapper = document.createElement("div");
-    wrapper.className = "home";
+    const home = document.createElement("div");
+    home.className = "home";
 
-    wrapper.append(
+    home.append(
         homeMenu,
         welcomeHome,
         services,
@@ -34,5 +34,5 @@ export function getPageHome()
         contact
     );
 
-    return wrapper;
+    return home;
 }

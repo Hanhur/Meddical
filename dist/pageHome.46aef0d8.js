@@ -430,10 +430,10 @@ var doctors = (0, _doctors.getDoctors)();
 var news = (0, _newsInformation.getNewsInformation)();
 var contact = (0, _contact.getContact)();
 function getPageHome() {
-  var wrapper = document.createElement("div");
-  wrapper.className = "home";
-  wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors, news, contact);
-  return wrapper;
+  var home = document.createElement("div");
+  home.className = "home";
+  home.append(homeMenu, welcomeHome, services, specialties, book, doctors, news, contact);
+  return home;
 }
 },{"../../components/home/homeMenu/homeMenu":"src/components/home/homeMenu/homeMenu.js","../../components/home/welcomeHome/welcomeHome":"src/components/home/welcomeHome/welcomeHome.js","../../components/home/services/services":"src/components/home/services/services.js","../../components/home/specialties/specialties":"src/components/home/specialties/specialties.js","../../components/home/bookAppointment/bookAppointment":"src/components/home/bookAppointment/bookAppointment.js","../../components/home/doctors/doctors":"src/components/home/doctors/doctors.js","../../components/home/newsInformation/newsInformation":"src/components/home/newsInformation/newsInformation.js","../../components/home/contact/contact":"src/components/home/contact/contact.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -460,7 +460,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43969" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39533" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

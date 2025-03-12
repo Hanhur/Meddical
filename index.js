@@ -20,6 +20,13 @@ router.on("/", async () => {
     main.append(pageHome);
     header.setActiveLink("home");
 });
+router.on("/about", async () => {
+    main.innerHTML = "";
+    const moduleAbout = await import("./src/pages/pageAbout/pageAbout");
+    const pageAbout = moduleAbout.getPageAbout();
+    main.append(pageAbout);
+    header.setActiveLink("about");
+});
 
 router.resolve();
 
