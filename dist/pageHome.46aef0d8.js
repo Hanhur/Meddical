@@ -117,17 +117,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/components/homeMenu/homeMenu.css":[function(require,module,exports) {
+})({"src/components/home/homeMenu/homeMenu.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../images/home-bg.png":[["home-bg.0eb22ec1.png","src/images/home-bg.png"],"src/images/home-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/images/book/calendar.svg":[function(require,module,exports) {
+},{"./../../../images/home-bg.png":[["home-bg.0eb22ec1.png","src/images/home-bg.png"],"src/images/home-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/images/book/calendar.svg":[function(require,module,exports) {
 module.exports = "/calendar.c269ccf6.svg";
 },{}],"src/images/book/team.svg":[function(require,module,exports) {
 module.exports = "/team.f8e257b7.svg";
 },{}],"src/images/book/cash.svg":[function(require,module,exports) {
 module.exports = "/cash.9cc79dfe.svg";
-},{}],"src/components/homeMenu/homeMenu.js":[function(require,module,exports) {
+},{}],"src/components/home/homeMenu/homeMenu.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -135,9 +135,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getHomeMenu = getHomeMenu;
 require("./homeMenu.css");
-var _calendar = _interopRequireDefault(require("../../images/book/calendar.svg"));
-var _team = _interopRequireDefault(require("../../images/book/team.svg"));
-var _cash = _interopRequireDefault(require("../../images/book/cash.svg"));
+var _calendar = _interopRequireDefault(require("../../../images/book/calendar.svg"));
+var _team = _interopRequireDefault(require("../../../images/book/team.svg"));
+var _cash = _interopRequireDefault(require("../../../images/book/cash.svg"));
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getHomeMenu() {
   var section = document.createElement("section");
@@ -154,23 +154,23 @@ function getHomeMenu() {
   container.append(homeBlock, bookBlock);
   return section;
 }
-},{"./homeMenu.css":"src/components/homeMenu/homeMenu.css","../../images/book/calendar.svg":"src/images/book/calendar.svg","../../images/book/team.svg":"src/images/book/team.svg","../../images/book/cash.svg":"src/images/book/cash.svg"}],"src/images/arrow-right.svg":[function(require,module,exports) {
+},{"./homeMenu.css":"src/components/home/homeMenu/homeMenu.css","../../../images/book/calendar.svg":"src/images/book/calendar.svg","../../../images/book/team.svg":"src/images/book/team.svg","../../../images/book/cash.svg":"src/images/book/cash.svg"}],"src/images/arrow-right.svg":[function(require,module,exports) {
 module.exports = "/arrow-right.b63a9d8d.svg";
 },{}],"src/images/welcome-bg.png":[function(require,module,exports) {
 module.exports = "/welcome-bg.30b488d3.png";
-},{}],"src/components/welcomeHome/welcomeHome.css":[function(require,module,exports) {
+},{}],"src/components/home/welcomeHome/welcomeHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/welcomeHome/welcomeHome.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/welcomeHome/welcomeHome.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getWelcomeHome = getWelcomeHome;
-var _arrowRight = _interopRequireDefault(require("../../images/arrow-right.svg"));
-var _welcomeBg = _interopRequireDefault(require("../../images/welcome-bg.png"));
+var _arrowRight = _interopRequireDefault(require("../../../images/arrow-right.svg"));
+var _welcomeBg = _interopRequireDefault(require("../../../images/welcome-bg.png"));
 require("./welcomeHome.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getWelcomeHome() {
@@ -185,7 +185,7 @@ function getWelcomeHome() {
   container.append(welcomeBlock);
   return section;
 }
-},{"../../images/arrow-right.svg":"src/images/arrow-right.svg","../../images/welcome-bg.png":"src/images/welcome-bg.png","./welcomeHome.css":"src/components/welcomeHome/welcomeHome.css"}],"src/images/services/checkup.svg":[function(require,module,exports) {
+},{"../../../images/arrow-right.svg":"src/images/arrow-right.svg","../../../images/welcome-bg.png":"src/images/welcome-bg.png","./welcomeHome.css":"src/components/home/welcomeHome/welcomeHome.css"}],"src/images/services/checkup.svg":[function(require,module,exports) {
 module.exports = "/checkup.95367307.svg";
 },{}],"src/images/services/cardiograma.svg":[function(require,module,exports) {
 module.exports = "/cardiograma.9ca7f37a.svg";
@@ -199,24 +199,24 @@ module.exports = "/rectangle.363d29d8.svg";
 module.exports = "/images-1.407a2661.png";
 },{}],"src/images/services/images-2.png":[function(require,module,exports) {
 module.exports = "/images-2.0caf7df2.png";
-},{}],"src/components/services/services.css":[function(require,module,exports) {
+},{}],"src/components/home/services/services.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/services/services.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/services/services.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getServices = getServices;
-var _checkup = _interopRequireDefault(require("../../images/services/checkup.svg"));
-var _cardiograma = _interopRequireDefault(require("../../images/services/cardiograma.svg"));
-var _testing = _interopRequireDefault(require("../../images/services/testing.svg"));
-var _bloodBank = _interopRequireDefault(require("../../images/services/blood-bank.svg"));
-var _rectangle = _interopRequireDefault(require("../../images/services/rectangle.svg"));
-var _images = _interopRequireDefault(require("../../images/services/images-1.png"));
-var _images2 = _interopRequireDefault(require("../../images/services/images-2.png"));
+var _checkup = _interopRequireDefault(require("../../../images/services/checkup.svg"));
+var _cardiograma = _interopRequireDefault(require("../../../images/services/cardiograma.svg"));
+var _testing = _interopRequireDefault(require("../../../images/services/testing.svg"));
+var _bloodBank = _interopRequireDefault(require("../../../images/services/blood-bank.svg"));
+var _rectangle = _interopRequireDefault(require("../../../images/services/rectangle.svg"));
+var _images = _interopRequireDefault(require("../../../images/services/images-1.png"));
+var _images2 = _interopRequireDefault(require("../../../images/services/images-2.png"));
 require("./services.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getServices() {
@@ -231,20 +231,20 @@ function getServices() {
   container.append(servicesBlock);
   return section;
 }
-},{"../../images/services/checkup.svg":"src/images/services/checkup.svg","../../images/services/cardiograma.svg":"src/images/services/cardiograma.svg","../../images/services/testing.svg":"src/images/services/testing.svg","../../images/services/blood-bank.svg":"src/images/services/blood-bank.svg","../../images/services/rectangle.svg":"src/images/services/rectangle.svg","../../images/services/images-1.png":"src/images/services/images-1.png","../../images/services/images-2.png":"src/images/services/images-2.png","./services.css":"src/components/services/services.css"}],"src/images/specialties.svg":[function(require,module,exports) {
+},{"../../../images/services/checkup.svg":"src/images/services/checkup.svg","../../../images/services/cardiograma.svg":"src/images/services/cardiograma.svg","../../../images/services/testing.svg":"src/images/services/testing.svg","../../../images/services/blood-bank.svg":"src/images/services/blood-bank.svg","../../../images/services/rectangle.svg":"src/images/services/rectangle.svg","../../../images/services/images-1.png":"src/images/services/images-1.png","../../../images/services/images-2.png":"src/images/services/images-2.png","./services.css":"src/components/home/services/services.css"}],"src/images/specialties.svg":[function(require,module,exports) {
 module.exports = "/specialties.a02c99b7.svg";
-},{}],"src/components/specialties/specialties.css":[function(require,module,exports) {
+},{}],"src/components/home/specialties/specialties.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/specialties/specialties.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/specialties/specialties.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getSpecialties = getSpecialties;
-var _specialties = _interopRequireDefault(require("../../images/specialties.svg"));
+var _specialties = _interopRequireDefault(require("../../../images/specialties.svg"));
 require("./specialties.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getSpecialties() {
@@ -259,20 +259,20 @@ function getSpecialties() {
   container.append(specialtiesBlock);
   return section;
 }
-},{"../../images/specialties.svg":"src/images/specialties.svg","./specialties.css":"src/components/specialties/specialties.css"}],"src/images/book-vector.svg":[function(require,module,exports) {
+},{"../../../images/specialties.svg":"src/images/specialties.svg","./specialties.css":"src/components/home/specialties/specialties.css"}],"src/images/book-vector.svg":[function(require,module,exports) {
 module.exports = "/book-vector.7ce14b28.svg";
-},{}],"src/components/bookAppointment/bookAppointment.css":[function(require,module,exports) {
+},{}],"src/components/home/bookAppointment/bookAppointment.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../images/book.bg.png":[["book.bg.957d345b.png","src/images/book.bg.png"],"src/images/book.bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/bookAppointment/bookAppointment.js":[function(require,module,exports) {
+},{"./../../../images/book.bg.png":[["book.bg.957d345b.png","src/images/book.bg.png"],"src/images/book.bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/bookAppointment/bookAppointment.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getBookAppointment = getBookAppointment;
-var _bookVector = _interopRequireDefault(require("../../images/book-vector.svg"));
+var _bookVector = _interopRequireDefault(require("../../../images/book-vector.svg"));
 require("./bookAppointment.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getBookAppointment() {
@@ -287,7 +287,7 @@ function getBookAppointment() {
   container.append(bookAppointmentBlock);
   return section;
 }
-},{"../../images/book-vector.svg":"src/images/book-vector.svg","./bookAppointment.css":"src/components/bookAppointment/bookAppointment.css"}],"src/images/doctors/images1.png":[function(require,module,exports) {
+},{"../../../images/book-vector.svg":"src/images/book-vector.svg","./bookAppointment.css":"src/components/home/bookAppointment/bookAppointment.css"}],"src/images/doctors/images1.png":[function(require,module,exports) {
 module.exports = "/images1.2ca1384f.png";
 },{}],"src/images/doctors/images2.png":[function(require,module,exports) {
 module.exports = "/images2.3de9e8a4.png";
@@ -299,23 +299,23 @@ module.exports = "/linkedln.a215d400.svg";
 module.exports = "/facebook.6a5b9146.svg";
 },{}],"src/images/doctors/instagram.svg":[function(require,module,exports) {
 module.exports = "/instagram.65b10378.svg";
-},{}],"src/components/doctors/doctors.css":[function(require,module,exports) {
+},{}],"src/components/home/doctors/doctors.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/doctors/doctors.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/doctors/doctors.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getDoctors = getDoctors;
-var _images = _interopRequireDefault(require("../../images/doctors/images1.png"));
-var _images2 = _interopRequireDefault(require("../../images/doctors/images2.png"));
-var _images3 = _interopRequireDefault(require("../../images/doctors/images3.png"));
-var _linkedln = _interopRequireDefault(require("../../images/doctors/linkedln.svg"));
-var _facebook = _interopRequireDefault(require("../../images/doctors/facebook.svg"));
-var _instagram = _interopRequireDefault(require("../../images/doctors/instagram.svg"));
+var _images = _interopRequireDefault(require("../../../images/doctors/images1.png"));
+var _images2 = _interopRequireDefault(require("../../../images/doctors/images2.png"));
+var _images3 = _interopRequireDefault(require("../../../images/doctors/images3.png"));
+var _linkedln = _interopRequireDefault(require("../../../images/doctors/linkedln.svg"));
+var _facebook = _interopRequireDefault(require("../../../images/doctors/facebook.svg"));
+var _instagram = _interopRequireDefault(require("../../../images/doctors/instagram.svg"));
 require("./doctors.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getDoctors() {
@@ -330,26 +330,26 @@ function getDoctors() {
   container.append(doctorsBlock);
   return section;
 }
-},{"../../images/doctors/images1.png":"src/images/doctors/images1.png","../../images/doctors/images2.png":"src/images/doctors/images2.png","../../images/doctors/images3.png":"src/images/doctors/images3.png","../../images/doctors/linkedln.svg":"src/images/doctors/linkedln.svg","../../images/doctors/facebook.svg":"src/images/doctors/facebook.svg","../../images/doctors/instagram.svg":"src/images/doctors/instagram.svg","./doctors.css":"src/components/doctors/doctors.css"}],"src/images/newsInformation/images.png":[function(require,module,exports) {
+},{"../../../images/doctors/images1.png":"src/images/doctors/images1.png","../../../images/doctors/images2.png":"src/images/doctors/images2.png","../../../images/doctors/images3.png":"src/images/doctors/images3.png","../../../images/doctors/linkedln.svg":"src/images/doctors/linkedln.svg","../../../images/doctors/facebook.svg":"src/images/doctors/facebook.svg","../../../images/doctors/instagram.svg":"src/images/doctors/instagram.svg","./doctors.css":"src/components/home/doctors/doctors.css"}],"src/images/newsInformation/images.png":[function(require,module,exports) {
 module.exports = "/images.8d9e5ba7.png";
 },{}],"src/images/newsInformation/eye.svg":[function(require,module,exports) {
 module.exports = "/eye.2c2e8edd.svg";
 },{}],"src/images/newsInformation/heart.svg":[function(require,module,exports) {
 module.exports = "/heart.1829f8ec.svg";
-},{}],"src/components/newsInformation/newsInformation.css":[function(require,module,exports) {
+},{}],"src/components/home/newsInformation/newsInformation.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/newsInformation/newsInformation.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/newsInformation/newsInformation.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getNewsInformation = getNewsInformation;
-var _images = _interopRequireDefault(require("../../images/newsInformation/images.png"));
-var _eye = _interopRequireDefault(require("../../images/newsInformation/eye.svg"));
-var _heart = _interopRequireDefault(require("../../images/newsInformation/heart.svg"));
+var _images = _interopRequireDefault(require("../../../images/newsInformation/images.png"));
+var _eye = _interopRequireDefault(require("../../../images/newsInformation/eye.svg"));
+var _heart = _interopRequireDefault(require("../../../images/newsInformation/heart.svg"));
 require("./newsInformation.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getNewsInformation() {
@@ -364,7 +364,7 @@ function getNewsInformation() {
   container.append(newsBlock);
   return section;
 }
-},{"../../images/newsInformation/images.png":"src/images/newsInformation/images.png","../../images/newsInformation/eye.svg":"src/images/newsInformation/eye.svg","../../images/newsInformation/heart.svg":"src/images/newsInformation/heart.svg","./newsInformation.css":"src/components/newsInformation/newsInformation.css"}],"src/images/contact/phone.svg":[function(require,module,exports) {
+},{"../../../images/newsInformation/images.png":"src/images/newsInformation/images.png","../../../images/newsInformation/eye.svg":"src/images/newsInformation/eye.svg","../../../images/newsInformation/heart.svg":"src/images/newsInformation/heart.svg","./newsInformation.css":"src/components/home/newsInformation/newsInformation.css"}],"src/images/contact/phone.svg":[function(require,module,exports) {
 module.exports = "/phone.b07cb107.svg";
 },{}],"src/images/contact/location.svg":[function(require,module,exports) {
 module.exports = "/location.7c36a89f.svg";
@@ -372,21 +372,21 @@ module.exports = "/location.7c36a89f.svg";
 module.exports = "/email.50ec0939.svg";
 },{}],"src/images/contact/hours.svg":[function(require,module,exports) {
 module.exports = "/hours.c922882b.svg";
-},{}],"src/components/contact/contact.css":[function(require,module,exports) {
+},{}],"src/components/home/contact/contact.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/contact/contact.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/home/contact/contact.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getContact = getContact;
-var _phone = _interopRequireDefault(require("../../images/contact/phone.svg"));
-var _location = _interopRequireDefault(require("../../images/contact/location.svg"));
-var _email = _interopRequireDefault(require("../../images/contact/email.svg"));
-var _hours = _interopRequireDefault(require("../../images/contact/hours.svg"));
+var _phone = _interopRequireDefault(require("../../../images/contact/phone.svg"));
+var _location = _interopRequireDefault(require("../../../images/contact/location.svg"));
+var _email = _interopRequireDefault(require("../../../images/contact/email.svg"));
+var _hours = _interopRequireDefault(require("../../../images/contact/hours.svg"));
 require("./contact.css");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
 function getContact() {
@@ -401,7 +401,7 @@ function getContact() {
   container.append(contactBlock);
   return section;
 }
-},{"../../images/contact/phone.svg":"src/images/contact/phone.svg","../../images/contact/location.svg":"src/images/contact/location.svg","../../images/contact/email.svg":"src/images/contact/email.svg","../../images/contact/hours.svg":"src/images/contact/hours.svg","./contact.css":"src/components/contact/contact.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
+},{"../../../images/contact/phone.svg":"src/images/contact/phone.svg","../../../images/contact/location.svg":"src/images/contact/location.svg","../../../images/contact/email.svg":"src/images/contact/email.svg","../../../images/contact/hours.svg":"src/images/contact/hours.svg","./contact.css":"src/components/home/contact/contact.css"}],"src/pages/pageHome/pageHome.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -412,14 +412,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getPageHome = getPageHome;
-var _homeMenu = require("../../components/homeMenu/homeMenu");
-var _welcomeHome = require("../../components/welcomeHome/welcomeHome");
-var _services = require("../../components/services/services");
-var _specialties = require("../../components/specialties/specialties");
-var _bookAppointment = require("../../components/bookAppointment/bookAppointment");
-var _doctors = require("../../components/doctors/doctors");
-var _newsInformation = require("../../components/newsInformation/newsInformation");
-var _contact = require("../../components/contact/contact");
+var _homeMenu = require("../../components/home/homeMenu/homeMenu");
+var _welcomeHome = require("../../components/home/welcomeHome/welcomeHome");
+var _services = require("../../components/home/services/services");
+var _specialties = require("../../components/home/specialties/specialties");
+var _bookAppointment = require("../../components/home/bookAppointment/bookAppointment");
+var _doctors = require("../../components/home/doctors/doctors");
+var _newsInformation = require("../../components/home/newsInformation/newsInformation");
+var _contact = require("../../components/home/contact/contact");
 require("./pageHome.css");
 var homeMenu = (0, _homeMenu.getHomeMenu)();
 var welcomeHome = (0, _welcomeHome.getWelcomeHome)();
@@ -431,11 +431,11 @@ var news = (0, _newsInformation.getNewsInformation)();
 var contact = (0, _contact.getContact)();
 function getPageHome() {
   var wrapper = document.createElement("div");
-  wrapper.className = "wrapper";
+  wrapper.className = "home";
   wrapper.append(homeMenu, welcomeHome, services, specialties, book, doctors, news, contact);
   return wrapper;
 }
-},{"../../components/homeMenu/homeMenu":"src/components/homeMenu/homeMenu.js","../../components/welcomeHome/welcomeHome":"src/components/welcomeHome/welcomeHome.js","../../components/services/services":"src/components/services/services.js","../../components/specialties/specialties":"src/components/specialties/specialties.js","../../components/bookAppointment/bookAppointment":"src/components/bookAppointment/bookAppointment.js","../../components/doctors/doctors":"src/components/doctors/doctors.js","../../components/newsInformation/newsInformation":"src/components/newsInformation/newsInformation.js","../../components/contact/contact":"src/components/contact/contact.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/home/homeMenu/homeMenu":"src/components/home/homeMenu/homeMenu.js","../../components/home/welcomeHome/welcomeHome":"src/components/home/welcomeHome/welcomeHome.js","../../components/home/services/services":"src/components/home/services/services.js","../../components/home/specialties/specialties":"src/components/home/specialties/specialties.js","../../components/home/bookAppointment/bookAppointment":"src/components/home/bookAppointment/bookAppointment.js","../../components/home/doctors/doctors":"src/components/home/doctors/doctors.js","../../components/home/newsInformation/newsInformation":"src/components/home/newsInformation/newsInformation.js","../../components/home/contact/contact":"src/components/home/contact/contact.js","./pageHome.css":"src/pages/pageHome/pageHome.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -460,7 +460,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41851" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43969" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
