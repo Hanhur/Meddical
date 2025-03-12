@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutHome/aboutHome.js":[function(require,module,exports) {
+},{"./../../../images/about-bg.png":[["about-bg.d31a0bfd.png","src/images/about-bg.png"],"src/images/about-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutHome/aboutHome.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -141,11 +141,42 @@ function getAboutHome() {
   container.append(aboutBlock);
   return section;
 }
-},{"./aboutHome.css":"src/components/about/aboutHome/aboutHome.css"}],"src/pages/pageAbout/pageAbout.css":[function(require,module,exports) {
+},{"./aboutHome.css":"src/components/about/aboutHome/aboutHome.css"}],"src/images/hospital.png":[function(require,module,exports) {
+module.exports = "/hospital.70cca1c5.png";
+},{}],"src/images/services/rectangle.svg":[function(require,module,exports) {
+module.exports = "/rectangle.363d29d8.svg";
+},{}],"src/components/about/aboutHospital/aboutHospital.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../images/about-bg.png":[["about-bg.d31a0bfd.png","src/images/about-bg.png"],"src/images/about-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/pages/pageAbout/pageAbout.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutHospital/aboutHospital.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getAboutHospital = getAboutHospital;
+var _hospital = _interopRequireDefault(require("../../../images/hospital.png"));
+var _rectangle = _interopRequireDefault(require("../../../images/services/rectangle.svg"));
+require("./aboutHospital.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getAboutHospital() {
+  var section = document.createElement("section");
+  section.className = "section-hospital";
+  var container = document.createElement("div");
+  container.className = "container";
+  var aboutHospital = document.createElement("div");
+  aboutHospital.className = "about-hospital";
+  aboutHospital.innerHTML = "\n        <img class=\"hospital-img\" src=\"".concat(_hospital.default, "\">\n        <div class=\"hospital-box\">\n            <p class=\"hospital-text\">Welcome to Hospital name</p>\n            <h1 class=\"hospital-title\">Best Care for Your Good Health</h1>\n             <ul class=\"hospital-list\">\n                <li class=\"hospital-item\">\n                    <img class=\"hospital-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                    <p class=\"hospital-item-text\">A Passion for Healing</p>\n                </li>\n                <li class=\"hospital-item\">\n                    <img class=\"hospital-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                    <p class=\"hospital-item-text\">All our best</p>\n                </li>\n                <li class=\"hospital-item\">\n                    <img class=\"hospital-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                    <p class=\"hospital-item-text\">A Legacy of Excellence</p>\n                </li>\n                <li class=\"hospital-item\">\n                    <img class=\"hospital-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                    <p class=\"hospital-item-text\">5-Star Care</p>\n                </li>\n                <li class=\"hospital-item\">\n                    <img class=\"hospital-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                    <p class=\"hospital-item-text\">Believe in Us</p>\n                </li>\n                <li class=\"hospital-item\">\n                    <img class=\"hospital-rectangle-img\" src=\"").concat(_rectangle.default, "\">\n                    <p class=\"hospital-item-text\">Always Caring</p>\n                </li>\n            </ul>\n            <p class=\"hospital_passion\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. \n                Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. \n                Velit nascetur proin massa in. Consequat faucibus porttitor enim et.\n            </p>\n            <p class=\"hospital_passion\">\n                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. \n                Convallis felis vitae tortor augue. Velit nascetur proin massa in.\n            </p>\n        </div>\n    ");
+  section.append(container);
+  container.append(aboutHospital);
+  return section;
+}
+},{"../../../images/hospital.png":"src/images/hospital.png","../../../images/services/rectangle.svg":"src/images/services/rectangle.svg","./aboutHospital.css":"src/components/about/aboutHospital/aboutHospital.css"}],"src/pages/pageAbout/pageAbout.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/pages/pageAbout/pageAbout.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -153,15 +184,17 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getPageAbout = getPageAbout;
 var _aboutHome = require("../../components/about/aboutHome/aboutHome");
+var _aboutHospital = require("../../components/about/aboutHospital/aboutHospital");
 require("./pageAbout.css");
 var aboutHome = (0, _aboutHome.getAboutHome)();
+var aboutHospital = (0, _aboutHospital.getAboutHospital)();
 function getPageAbout() {
   var about = document.createElement("div");
   about.className = "about";
-  about.append(aboutHome);
+  about.append(aboutHome, aboutHospital);
   return about;
 }
-},{"../../components/about/aboutHome/aboutHome":"src/components/about/aboutHome/aboutHome.js","./pageAbout.css":"src/pages/pageAbout/pageAbout.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/about/aboutHome/aboutHome":"src/components/about/aboutHome/aboutHome.js","../../components/about/aboutHospital/aboutHospital":"src/components/about/aboutHospital/aboutHospital.js","./pageAbout.css":"src/pages/pageAbout/pageAbout.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -186,7 +219,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39533" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37295" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
