@@ -200,7 +200,121 @@ function getAboutComment() {
   container.append(aboutComment);
   return section;
 }
-},{"../../../images/vector.svg":"src/images/vector.svg","./aboutComment.css":"src/components/about/aboutComment/aboutComment.css"}],"src/pages/pageAbout/pageAbout.css":[function(require,module,exports) {
+},{"../../../images/vector.svg":"src/images/vector.svg","./aboutComment.css":"src/components/about/aboutComment/aboutComment.css"}],"src/images/doctors/images1.png":[function(require,module,exports) {
+module.exports = "/images1.2ca1384f.png";
+},{}],"src/images/doctors/images2.png":[function(require,module,exports) {
+module.exports = "/images2.3de9e8a4.png";
+},{}],"src/images/doctors/images3.png":[function(require,module,exports) {
+module.exports = "/images3.379a1b45.png";
+},{}],"src/images/doctors/linkedln.svg":[function(require,module,exports) {
+module.exports = "/linkedln.a215d400.svg";
+},{}],"src/images/doctors/facebook.svg":[function(require,module,exports) {
+module.exports = "/facebook.6a5b9146.svg";
+},{}],"src/images/doctors/instagram.svg":[function(require,module,exports) {
+module.exports = "/instagram.65b10378.svg";
+},{}],"src/components/about/aboutDoctors/aboutDoctors.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutDoctors/aboutDoctors.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getAboutDoctors = getAboutDoctors;
+var _images = _interopRequireDefault(require("../../../images/doctors/images1.png"));
+var _images2 = _interopRequireDefault(require("../../../images/doctors/images2.png"));
+var _images3 = _interopRequireDefault(require("../../../images/doctors/images3.png"));
+var _linkedln = _interopRequireDefault(require("../../../images/doctors/linkedln.svg"));
+var _facebook = _interopRequireDefault(require("../../../images/doctors/facebook.svg"));
+var _instagram = _interopRequireDefault(require("../../../images/doctors/instagram.svg"));
+require("./aboutDoctors.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getAboutDoctors() {
+  var section = document.createElement("section");
+  section.className = "section-doctors";
+  var container = document.createElement("div");
+  container.className = "container";
+  var doctorsBlock = document.createElement("div");
+  doctorsBlock.className = "doctors-block";
+  doctorsBlock.innerHTML = "\n        <p class=\"doctors-text\">Trusted Care</p>\n        <h2 class=\"doctors-title\">Our Doctors</h2>\n        <div class=\"doctors-inner\">\n            <div class=\"doctors-box\">\n                <img class=\"doctors-img\" src=\"".concat(_images.default, "\" alt=\"\">\n                <p class=\"docrors-box-text\">Doctor\u2019s Name</p>\n                <h3 class=\"docrors-box-title\">Neurology</h3>\n                <div class=\"doctors-social\">\n                    <ul class=\"doctors-list\">\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_linkedln.default, "\" alt=\"Linkedln\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n                <button class=\"doctors-btn\">View Profile</button>\n            </div>\n            <div class=\"doctors-box\">\n                <img class=\"doctors-img\" src=\"").concat(_images2.default, "\" alt=\"\">\n                <p class=\"docrors-box-text\">Doctor\u2019s Name</p>\n                <h3 class=\"docrors-box-title\">Neurology</h3>\n                <div class=\"doctors-social\">\n                    <ul class=\"doctors-list\">\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_linkedln.default, "\" alt=\"Linkedln\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n                <button class=\"doctors-btn\">View Profile</button>\n            </div>\n            <div class=\"doctors-box\">\n                <img class=\"doctors-img\" src=\"").concat(_images3.default, "\" alt=\"\">\n                <p class=\"docrors-box-text\">Doctor\u2019s Name</p>\n                <h3 class=\"docrors-box-title\">Neurology</h3>\n                <div class=\"doctors-social\">\n                    <ul class=\"doctors-list\">\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_linkedln.default, "\" alt=\"Linkedln\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_facebook.default, "\" alt=\"Facebook\">\n                            </a>\n                        </li>\n                        <li class=\"doctors-item\">\n                            <a class=\"doctors-link\" href=\"#\">\n                                <img class=\"doctors-img\" src=\"").concat(_instagram.default, "\" alt=\"Instagram\">\n                            </a>\n                        </li>\n                    </ul>\n                </div>\n                <button class=\"doctors-btn\">View Profile</button>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(doctorsBlock);
+  return section;
+}
+},{"../../../images/doctors/images1.png":"src/images/doctors/images1.png","../../../images/doctors/images2.png":"src/images/doctors/images2.png","../../../images/doctors/images3.png":"src/images/doctors/images3.png","../../../images/doctors/linkedln.svg":"src/images/doctors/linkedln.svg","../../../images/doctors/facebook.svg":"src/images/doctors/facebook.svg","../../../images/doctors/instagram.svg":"src/images/doctors/instagram.svg","./aboutDoctors.css":"src/components/about/aboutDoctors/aboutDoctors.css"}],"src/images/newsInformation/images.png":[function(require,module,exports) {
+module.exports = "/images.8d9e5ba7.png";
+},{}],"src/images/newsInformation/eye.svg":[function(require,module,exports) {
+module.exports = "/eye.2c2e8edd.svg";
+},{}],"src/images/newsInformation/heart.svg":[function(require,module,exports) {
+module.exports = "/heart.1829f8ec.svg";
+},{}],"src/components/about/aboutNews/aboutNews.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutNews/aboutNews.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getAboutNews = getAboutNews;
+var _images = _interopRequireDefault(require("../../../images/newsInformation/images.png"));
+var _eye = _interopRequireDefault(require("../../../images/newsInformation/eye.svg"));
+var _heart = _interopRequireDefault(require("../../../images/newsInformation/heart.svg"));
+require("./aboutNews.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getAboutNews() {
+  var section = document.createElement("section");
+  section.className = "section-news";
+  var container = document.createElement("div");
+  container.className = "container";
+  var newsBlock = document.createElement("div");
+  newsBlock.className = "news-block";
+  newsBlock.innerHTML = "\n        <p class=\"news-block-text\">Better information, Better health</p>\n        <h2 class=\"news-block-title\">News</h2>\n        <div class=\"news-inner\">\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"".concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"").concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"").concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n            <div class=\"news-box\">\n                <img class=\"news-img\" src=\"").concat(_images.default, "\">\n                <div class=\"news-comment\">\n                    <p class=\"news-comment-text\">Monday 05, September 2021 | By Author</p>\n                    <p class=\"news-comment_text\">This Article\u2019s Title goes Here, but not too long.</p>\n                    <div class=\"news-rating\">\n                        <img class=\"news-img\" src=\"").concat(_eye.default, "\">\n                        <span class=\"news-span\">68</span>\n                        <img class=\"news-img\" src=\"").concat(_heart.default, "\">\n                        <span class=\"news-span\">86</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(newsBlock);
+  return section;
+}
+},{"../../../images/newsInformation/images.png":"src/images/newsInformation/images.png","../../../images/newsInformation/eye.svg":"src/images/newsInformation/eye.svg","../../../images/newsInformation/heart.svg":"src/images/newsInformation/heart.svg","./aboutNews.css":"src/components/about/aboutNews/aboutNews.css"}],"src/images/contact/phone.svg":[function(require,module,exports) {
+module.exports = "/phone.b07cb107.svg";
+},{}],"src/images/contact/location.svg":[function(require,module,exports) {
+module.exports = "/location.7c36a89f.svg";
+},{}],"src/images/contact/email.svg":[function(require,module,exports) {
+module.exports = "/email.50ec0939.svg";
+},{}],"src/images/contact/hours.svg":[function(require,module,exports) {
+module.exports = "/hours.c922882b.svg";
+},{}],"src/components/about/aboutContact/aboutContact.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutContact/aboutContact.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getAboutContact = getAboutContact;
+var _phone = _interopRequireDefault(require("../../../images/contact/phone.svg"));
+var _location = _interopRequireDefault(require("../../../images/contact/location.svg"));
+var _email = _interopRequireDefault(require("../../../images/contact/email.svg"));
+var _hours = _interopRequireDefault(require("../../../images/contact/hours.svg"));
+require("./aboutContact.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getAboutContact() {
+  var section = document.createElement("section");
+  section.className = "section-contact";
+  var container = document.createElement("div");
+  container.className = "container";
+  var contactBlock = document.createElement("div");
+  contactBlock.className = "contact-block";
+  contactBlock.innerHTML = "\n        <p class=\"contact-block-text\">Get in touch</p>\n        <h2 class=\"contact-block-title\">Contact</h2>\n        <div class=\"contact-inner\">\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"".concat(_phone.default, "\">\n                <p class=\"contact-box-text\">Emergency</p>\n                <address class=\"contact-address\">\n                    <ul class=\"contact-list\">\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"tel:237681812255\">(237) 681-812-255</a>\n                        </li>\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"tel:237666331894\">(237) 666-331-894</a>\n                        </li>\n                    </ul>\n                </address>\n            </div>\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"").concat(_location.default, "\">\n                <p class=\"contact-box-text\">Location</p>\n                <p class=\"contact-box_text\">0123 Some place</p>\n                <p class=\"contact-box_text\">9876 Some country</p>\n            </div>\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"").concat(_email.default, "\">\n                <p class=\"contact-box-text\">Email</p>\n                <address class=\"contact-address\">\n                    <ul class=\"contact-list\">\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"mailto:fildineeesoe@gmil.com\">fildineeesoe@gmil.com</a>\n                        </li>\n                        <li class=\"contact-item\">\n                            <a class=\"contact-link\" href=\"mailto:myebstudios@gmail.com\">myebstudios@gmail.com</a>\n                        </li>\n                    </ul>\n                </address>\n            </div>\n            <div class=\"contact-box\">\n                <img class=\"contact-img\" src=\"").concat(_hours.default, "\">\n                <p class=\"contact-box-text\">Working Hours</p>\n                <p class=\"contact-box_text\">Mon-Sat 09:00-20:00</p>\n                <p class=\"contact-box_text\">Sunday Emergency only</p>\n            </div>\n        </div>\n    ");
+  section.append(container);
+  container.append(contactBlock);
+  return section;
+}
+},{"../../../images/contact/phone.svg":"src/images/contact/phone.svg","../../../images/contact/location.svg":"src/images/contact/location.svg","../../../images/contact/email.svg":"src/images/contact/email.svg","../../../images/contact/hours.svg":"src/images/contact/hours.svg","./aboutContact.css":"src/components/about/aboutContact/aboutContact.css"}],"src/pages/pageAbout/pageAbout.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -214,17 +328,23 @@ exports.getPageAbout = getPageAbout;
 var _aboutHome = require("../../components/about/aboutHome/aboutHome");
 var _aboutHospital = require("../../components/about/aboutHospital/aboutHospital");
 var _aboutComment = require("../../components/about/aboutComment/aboutComment");
+var _aboutDoctors = require("../../components/about/aboutDoctors/aboutDoctors");
+var _aboutNews = require("../../components/about/aboutNews/aboutNews");
+var _aboutContact = require("../../components/about/aboutContact/aboutContact");
 require("./pageAbout.css");
 var aboutHome = (0, _aboutHome.getAboutHome)();
 var aboutHospital = (0, _aboutHospital.getAboutHospital)();
 var aboutComment = (0, _aboutComment.getAboutComment)();
+var aboutDoctors = (0, _aboutDoctors.getAboutDoctors)();
+var aboutNews = (0, _aboutNews.getAboutNews)();
+var aboutContact = (0, _aboutContact.getAboutContact)();
 function getPageAbout() {
   var about = document.createElement("div");
   about.className = "about";
-  about.append(aboutHome, aboutHospital, aboutComment);
+  about.append(aboutHome, aboutHospital, aboutComment, aboutDoctors, aboutNews, aboutContact);
   return about;
 }
-},{"../../components/about/aboutHome/aboutHome":"src/components/about/aboutHome/aboutHome.js","../../components/about/aboutHospital/aboutHospital":"src/components/about/aboutHospital/aboutHospital.js","../../components/about/aboutComment/aboutComment":"src/components/about/aboutComment/aboutComment.js","./pageAbout.css":"src/pages/pageAbout/pageAbout.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/about/aboutHome/aboutHome":"src/components/about/aboutHome/aboutHome.js","../../components/about/aboutHospital/aboutHospital":"src/components/about/aboutHospital/aboutHospital.js","../../components/about/aboutComment/aboutComment":"src/components/about/aboutComment/aboutComment.js","../../components/about/aboutDoctors/aboutDoctors":"src/components/about/aboutDoctors/aboutDoctors.js","../../components/about/aboutNews/aboutNews":"src/components/about/aboutNews/aboutNews.js","../../components/about/aboutContact/aboutContact":"src/components/about/aboutContact/aboutContact.js","./pageAbout.css":"src/pages/pageAbout/pageAbout.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -249,7 +369,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35689" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36325" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
