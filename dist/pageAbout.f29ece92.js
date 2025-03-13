@@ -172,7 +172,35 @@ function getAboutHospital() {
   container.append(aboutHospital);
   return section;
 }
-},{"../../../images/hospital.png":"src/images/hospital.png","../../../images/services/rectangle.svg":"src/images/services/rectangle.svg","./aboutHospital.css":"src/components/about/aboutHospital/aboutHospital.css"}],"src/pages/pageAbout/pageAbout.css":[function(require,module,exports) {
+},{"../../../images/hospital.png":"src/images/hospital.png","../../../images/services/rectangle.svg":"src/images/services/rectangle.svg","./aboutHospital.css":"src/components/about/aboutHospital/aboutHospital.css"}],"src/images/vector.svg":[function(require,module,exports) {
+module.exports = "/vector.e216cf42.svg";
+},{}],"src/components/about/aboutComment/aboutComment.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./../../../images/testimonials.png":[["testimonials.813d1114.png","src/images/testimonials.png"],"src/images/testimonials.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutComment/aboutComment.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getAboutComment = getAboutComment;
+var _vector = _interopRequireDefault(require("../../../images/vector.svg"));
+require("./aboutComment.css");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function getAboutComment() {
+  var section = document.createElement("section");
+  section.className = "section-comment";
+  var container = document.createElement("div");
+  container.className = "container";
+  var aboutComment = document.createElement("div");
+  aboutComment.className = "about-comment";
+  aboutComment.innerHTML = "\n        <img class=\"comment-img\" src=\"".concat(_vector.default, "\">\n        <p class=\"comment-text\">\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n            Quisque placerat scelerisque tortor ornare ornare. \n            Quisque placerat scelerisque felis vitae tortor augue. \n            Velit nascetur Consequat faucibus porttitor enim et.\n        </p>\n        <span class=\"comment-athor\">John Doe</span>\n    ");
+  section.append(container);
+  container.append(aboutComment);
+  return section;
+}
+},{"../../../images/vector.svg":"src/images/vector.svg","./aboutComment.css":"src/components/about/aboutComment/aboutComment.css"}],"src/pages/pageAbout/pageAbout.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
@@ -185,16 +213,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.getPageAbout = getPageAbout;
 var _aboutHome = require("../../components/about/aboutHome/aboutHome");
 var _aboutHospital = require("../../components/about/aboutHospital/aboutHospital");
+var _aboutComment = require("../../components/about/aboutComment/aboutComment");
 require("./pageAbout.css");
 var aboutHome = (0, _aboutHome.getAboutHome)();
 var aboutHospital = (0, _aboutHospital.getAboutHospital)();
+var aboutComment = (0, _aboutComment.getAboutComment)();
 function getPageAbout() {
   var about = document.createElement("div");
   about.className = "about";
-  about.append(aboutHome, aboutHospital);
+  about.append(aboutHome, aboutHospital, aboutComment);
   return about;
 }
-},{"../../components/about/aboutHome/aboutHome":"src/components/about/aboutHome/aboutHome.js","../../components/about/aboutHospital/aboutHospital":"src/components/about/aboutHospital/aboutHospital.js","./pageAbout.css":"src/pages/pageAbout/pageAbout.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../components/about/aboutHome/aboutHome":"src/components/about/aboutHome/aboutHome.js","../../components/about/aboutHospital/aboutHospital":"src/components/about/aboutHospital/aboutHospital.js","../../components/about/aboutComment/aboutComment":"src/components/about/aboutComment/aboutComment.js","./pageAbout.css":"src/pages/pageAbout/pageAbout.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -219,7 +249,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37295" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35689" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

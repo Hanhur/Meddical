@@ -1,11 +1,12 @@
 import { getAboutHome } from "../../components/about/aboutHome/aboutHome";
 import { getAboutHospital } from "../../components/about/aboutHospital/aboutHospital";
-
+import { getAboutComment } from "../../components/about/aboutComment/aboutComment";
 
 import "./pageAbout.css";
 
 const aboutHome = getAboutHome();
 const aboutHospital = getAboutHospital();
+const aboutComment = getAboutComment();
 
 
 export function getPageAbout()
@@ -16,6 +17,7 @@ export function getPageAbout()
     about.append(
         aboutHome,
         aboutHospital,
+        aboutComment,
     );
 
     return about;
