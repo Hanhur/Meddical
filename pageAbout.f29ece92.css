@@ -31,6 +31,10 @@
     font-weight: 600;
     color: var(--Signal-blue);
 }
+.section-hospital
+{
+    margin-bottom: 64px;
+}
 .about-hospital
 {
     display: flex;
@@ -77,6 +81,51 @@
 {
     width: 512px;
     margin-bottom: 16px;
+}
+.section-comment
+{
+    background-image: linear-gradient(rgba(31, 43, 108, 0.5), rgba(31, 43, 108, 0.5)), url(/testimonials.813d1114.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 530px;
+    margin-bottom: 64px;
+}
+.about-comment
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+}
+.comment-img
+{
+    margin-bottom: 40px;
+}
+.comment-text
+{
+    font-size: 22px;
+    color: var(--White);
+    width: 620px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.comment-athor
+{
+    font-size: 22px;
+    color: var(--White);
+    position: relative;
+}
+.comment-athor::before
+{
+    position: absolute;
+    content: '';
+    top: 40px;
+    left: -65px;
+    width: 222px;
+    height: 1px;
+    background-color: var(--Light-blue);
 }
 
 /*# sourceMappingURL=/pageAbout.f29ece92.css.map */
