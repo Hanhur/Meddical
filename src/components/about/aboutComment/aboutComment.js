@@ -6,9 +6,6 @@ export function getAboutComment()
     const section = document.createElement("section");
     section.className = "section-comment";
 
-    const container = document.createElement("div");
-    container.className = "container";
-
     const aboutComment = document.createElement("div");
     aboutComment.className = "about-comment";
     aboutComment.innerHTML = `
@@ -22,8 +19,7 @@ export function getAboutComment()
         <span class="comment-athor">John Doe</span>
     `;
 
-    section.append(container);
-    container.append(aboutComment);
+    section.append(aboutComment);
 
     return section;
 }

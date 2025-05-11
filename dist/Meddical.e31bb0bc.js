@@ -299,7 +299,7 @@ exports.getMain = getMain;
 require("./main.css");
 function getMain() {
   var main = document.createElement("main");
-  main.className = "main";
+  main.classList.add("main", "container");
   return main;
 }
 },{"./main.css":"src/components/main/main.css"}],"src/images/footer-social/post.svg":[function(require,module,exports) {
@@ -494,7 +494,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36325" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40133" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

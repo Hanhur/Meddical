@@ -8,9 +8,6 @@ export function getAboutHospital()
     const section = document.createElement("section");
     section.className = "section-hospital";
 
-    const container = document.createElement("div");
-    container.className = "container";
-
     const aboutHospital = document.createElement("div");
     aboutHospital.className = "about-hospital";
     aboutHospital.innerHTML = `
@@ -56,8 +53,7 @@ export function getAboutHospital()
         </div>
     `;
 
-    section.append(container);
-    container.append(aboutHospital);
+    section.append(aboutHospital);
 
     return section;
 }

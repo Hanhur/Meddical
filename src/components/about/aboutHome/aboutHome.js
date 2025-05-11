@@ -5,9 +5,6 @@ export function getAboutHome()
     const section = document.createElement("section");
     section.className = "section-about";
 
-    const container = document.createElement("div");
-    container.className = "container";
-
     const aboutBlock = document.createElement("div");
     aboutBlock.className = "about-block";
     aboutBlock.innerHTML = `
@@ -22,8 +19,7 @@ export function getAboutHome()
         <p class="about-text">About us</p>
     `;
 
-    section.append(container);
-    container.append(aboutBlock);
+    section.append(aboutBlock);
 
     return section;
 }

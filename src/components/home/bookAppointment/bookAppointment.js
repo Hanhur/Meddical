@@ -6,9 +6,6 @@ export function getBookAppointment()
     const section = document.createElement("section");
     section.className = "section-book";
 
-    const container = document.createElement("div");
-    container.className = "container";
-
     const bookAppointmentBlock = document.createElement("div");
     bookAppointmentBlock.className = "book-appointment";
     bookAppointmentBlock.innerHTML = `
@@ -63,8 +60,7 @@ export function getBookAppointment()
         </div>
     `;
 
-    section.append(container);
-    container.append(bookAppointmentBlock);
+    section.append(bookAppointmentBlock);
 
     return section;
 }

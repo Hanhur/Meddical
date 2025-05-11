@@ -9,9 +9,6 @@ export function getNewsInformation()
     const section = document.createElement("section");
     section.className = "section-news";
 
-    const container = document.createElement("div");
-    container.className = "container";
-
     const newsBlock = document.createElement("div");
     newsBlock.className = "news-block";
     newsBlock.innerHTML = `
@@ -73,8 +70,7 @@ export function getNewsInformation()
         </div>
     `;
 
-    section.append(container);
-    container.append(newsBlock);
+    section.append(newsBlock);
 
     return section;
 }

@@ -12,9 +12,6 @@ export function getAboutDoctors()
     const section = document.createElement("section");
     section.className = "section-doctors";
 
-    const container = document.createElement("div");
-    container.className = "container";
-
     const doctorsBlock = document.createElement("div");
     doctorsBlock.className = "doctors-block";
     doctorsBlock.innerHTML = `
@@ -99,9 +96,7 @@ export function getAboutDoctors()
         </div>
     `;
 
-
-    section.append(container);
-    container.append(doctorsBlock);
+    section.append(doctorsBlock);
 
     return section;
 }
