@@ -13,6 +13,9 @@ export function getServices()
     const section = document.createElement("section");
     section.className = "section-services";
 
+    const container = document.createElement("div");
+    container.className = "container";
+
     const servicesBlock = document.createElement("div");
     servicesBlock.className = "services-block";
     servicesBlock.innerHTML = `
@@ -85,7 +88,8 @@ export function getServices()
         </div>
     `;
 
-    section.append(servicesBlock);
+    section.append(container);
+    container.append(servicesBlock);
 
     return section;
 }

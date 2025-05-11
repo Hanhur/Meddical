@@ -7,6 +7,9 @@ export function getHomeMenu() {
     const section = document.createElement("section");
     section.className = "section-home";
 
+    const container = document.createElement("div");
+    container.className = "container";
+
     const homeBlock = document.createElement("div");
     homeBlock.className = "home-block";
     homeBlock.innerHTML = `
@@ -32,7 +35,8 @@ export function getHomeMenu() {
             </div>
         `;
 
-    section.append(homeBlock, bookBlock);
+    section.append(container);
+    container.append(homeBlock, bookBlock);
 
     return section;
 }

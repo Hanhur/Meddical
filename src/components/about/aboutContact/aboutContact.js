@@ -10,6 +10,9 @@ export function getAboutContact()
     const section = document.createElement("section");
     section.className = "section-contact";
 
+    const container = document.createElement("div");
+    container.className = "container";
+
     const contactBlock = document.createElement("div");
     contactBlock.className = "contact-block";
     contactBlock.innerHTML = `
@@ -59,7 +62,8 @@ export function getAboutContact()
         </div>
     `;
 
-    section.append(contactBlock);
+    section.append(container);
+    container.append(contactBlock);
 
     return section;
 }

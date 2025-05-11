@@ -7,6 +7,9 @@ export function getSpecialties()
     const section = document.createElement("section");
     section.className = "section-specialties";
 
+    const container = document.createElement("div");
+    container.className = "container";
+
     const specialtiesBlock = document.createElement("div");
     specialtiesBlock.className = "specialties-block";
     specialtiesBlock.innerHTML = `
@@ -64,7 +67,8 @@ export function getSpecialties()
         </div>
     `;
 
-    section.append(specialtiesBlock);
+    section.append(container);
+    container.append(specialtiesBlock);
 
     return section;
 }

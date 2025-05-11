@@ -7,6 +7,9 @@ export function getWelcomeHome()
     const section = document.createElement("section");
     section.className = "section-welcome";
 
+    const container = document.createElement("div");
+    container.className = "container";
+
     const welcomeBlock = document.createElement("div");
     welcomeBlock.className = "welcome-block";
     welcomeBlock.innerHTML = `
@@ -25,7 +28,8 @@ export function getWelcomeHome()
         <img class="welcome-bg" src="${welcome_bg}">
     `;
 
-    section.append(welcomeBlock);
+    section.append(container);
+    container.append(welcomeBlock);
 
     return section;
 }
