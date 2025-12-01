@@ -28,6 +28,14 @@ router.on("/about", async () => {
     header.setActiveLink("about");
 });
 
+router.on("/services", async () => {
+    main.innerHTML = "";
+    const moduleServices = await import("./src/pages/pageServices/pageServices");
+    const pageServices = moduleServices.getPageServices();
+    main.append(pageServices);
+    header.setActiveLink("services");
+});
+
 router.resolve();
 
 app.append(header.header, main, footer);

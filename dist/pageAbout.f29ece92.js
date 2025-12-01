@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../../images/about-bg.png":[["about-bg.d31a0bfd.png","src/images/about-bg.png"],"src/images/about-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutHome/aboutHome.js":[function(require,module,exports) {
+},{"./..\\..\\..\\images\\about-bg.png":[["about-bg.d31a0bfd.png","src/images/about-bg.png"],"src/images/about-bg.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutHome/aboutHome.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -178,7 +178,7 @@ module.exports = "/vector.e216cf42.svg";
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../../images/testimonials.png":[["testimonials.813d1114.png","src/images/testimonials.png"],"src/images/testimonials.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutComment/aboutComment.js":[function(require,module,exports) {
+},{"./..\\..\\..\\images\\testimonials.png":[["testimonials.813d1114.png","src/images/testimonials.png"],"src/images/testimonials.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/about/aboutComment/aboutComment.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -369,7 +369,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35513" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58735" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

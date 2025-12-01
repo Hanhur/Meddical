@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../fonts/WorkSans-Regular.ttf":[["WorkSans-Regular.95e6c57a.ttf","src/fonts/WorkSans-Regular.ttf"],"src/fonts/WorkSans-Regular.ttf"],"./../fonts/WorkSans-Medium.ttf":[["WorkSans-Medium.e89e6bf5.ttf","src/fonts/WorkSans-Medium.ttf"],"src/fonts/WorkSans-Medium.ttf"],"./../fonts/WorkSans-SemiBold.ttf":[["WorkSans-SemiBold.c89ca042.ttf","src/fonts/WorkSans-SemiBold.ttf"],"src/fonts/WorkSans-SemiBold.ttf"],"./../fonts/WorkSans-Bold.ttf":[["WorkSans-Bold.696d23e0.ttf","src/fonts/WorkSans-Bold.ttf"],"src/fonts/WorkSans-Bold.ttf"],"./../fonts/YesevaOne-Regular.ttf":[["YesevaOne-Regular.cfd88e49.ttf","src/fonts/YesevaOne-Regular.ttf"],"src/fonts/YesevaOne-Regular.ttf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\fonts\\WorkSans-Regular.ttf":[["WorkSans-Regular.95e6c57a.ttf","src/fonts/WorkSans-Regular.ttf"],"src/fonts/WorkSans-Regular.ttf"],"./..\\fonts\\WorkSans-Medium.ttf":[["WorkSans-Medium.e89e6bf5.ttf","src/fonts/WorkSans-Medium.ttf"],"src/fonts/WorkSans-Medium.ttf"],"./..\\fonts\\WorkSans-SemiBold.ttf":[["WorkSans-SemiBold.c89ca042.ttf","src/fonts/WorkSans-SemiBold.ttf"],"src/fonts/WorkSans-SemiBold.ttf"],"./..\\fonts\\WorkSans-Bold.ttf":[["WorkSans-Bold.696d23e0.ttf","src/fonts/WorkSans-Bold.ttf"],"src/fonts/WorkSans-Bold.ttf"],"./..\\fonts\\YesevaOne-Regular.ttf":[["YesevaOne-Regular.cfd88e49.ttf","src/fonts/YesevaOne-Regular.ttf"],"src/fonts/YesevaOne-Regular.ttf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35513" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58735" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

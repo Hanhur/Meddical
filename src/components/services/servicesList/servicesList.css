@@ -1,0 +1,43 @@
+.services_list
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services_list-item 
+{
+    border-radius: 7px;
+    border: 1px solid #c4c4c4;
+}
+
+.services_box 
+{
+    padding: 56px 20px 32px 20px;
+}
+
+.services_title 
+{
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--Signal-blue);
+    margin-bottom: 8px;
+}
+
+.services__text 
+{
+    width: 277px;
+    margin-bottom: 16px;
+}
+
+.welcome__box 
+{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.welcome-text 
+{
+    color: var(--Twitter-color);
+}
